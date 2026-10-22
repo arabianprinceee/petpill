@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PetPill: Pet Medication Reminders for iPhone</title>
+<meta name="description" content="PetPill reminds you when your pet's medication is due and keeps their whole routine in one app: doses, meals, chores, vet visits, weight and a vet report. Share it with everyone at home.">
+<meta name="apple-itunes-app" content="app-id=6760020801">
+<meta name="theme-color" content="#456af7">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://arabianprinceee.github.io/petpill/">
+<link rel="alternate" hreflang="en" href="https://arabianprinceee.github.io/petpill/">
+<link rel="alternate" hreflang="de" href="https://arabianprinceee.github.io/petpill/de/">
+<link rel="alternate" hreflang="fr" href="https://arabianprinceee.github.io/petpill/fr/">
+<link rel="alternate" hreflang="es" href="https://arabianprinceee.github.io/petpill/es/">
+<link rel="alternate" hreflang="it" href="https://arabianprinceee.github.io/petpill/it/">
+<link rel="alternate" hreflang="pt-BR" href="https://arabianprinceee.github.io/petpill/pt-br/">
+<link rel="alternate" hreflang="ru" href="https://arabianprinceee.github.io/petpill/ru/">
+<link rel="alternate" hreflang="ja" href="https://arabianprinceee.github.io/petpill/ja/">
+<link rel="alternate" hreflang="ko" href="https://arabianprinceee.github.io/petpill/ko/">
+<link rel="alternate" hreflang="zh-Hans" href="https://arabianprinceee.github.io/petpill/zh-hans/">
+<link rel="alternate" hreflang="x-default" href="https://arabianprinceee.github.io/petpill/">
+<meta property="og:url" content="https://arabianprinceee.github.io/petpill/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PetPill: Pet Medication Reminders for iPhone">
+<meta property="og:description" content="Never miss a dose, a meal or a vet visit. Everyone at home sees who gave what.">
+<meta property="og:image" content="https://arabianprinceee.github.io/petpill/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "PetPill",
+  "operatingSystem": "iOS 17.6 or later",
+  "applicationCategory": "HealthApplication",
+  "description": "Pet medication reminders and health record for iPhone, iPad and Apple Watch.",
+  "downloadUrl": "https://apps.apple.com/app/id6760020801",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is PetPill free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The free version covers one pet, one medication and one vet visit, with reminders, dose history and the Apple Watch app. PetPill Pro unlocks everything else, monthly, yearly or once for life. The yearly plan starts with a 7-day free trial for new subscribers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which pets does it work for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dogs, cats, rabbits, hamsters, birds, fish, turtles, and any other pet you type in. With Pro you can add as many as you have."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my partner use PetPill for the same pet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Share a pet with your partner or anyone you live with, and you both see the same schedule and who gave each dose. Inviting needs PetPill Pro; joining is free. A Pro subscription also covers your Apple Family Sharing group. How household sharing works"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to open the app to log a dose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Mark a dose as given right from its notification, from a widget on your Home Screen or Lock Screen, or from your Apple Watch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is my pet's data stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your pets' records are stored in your own iCloud account and sync across your iPhone, iPad and Apple Watch. The privacy policy lists everything the app collects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does PetPill give veterinary advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. PetPill reminds and records. Any threshold or target is a number you set, and the app never tells you what a reading means. Always follow your vet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which devices and languages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "iPhone and iPad with iOS 17.6 or later, and Apple Watch. PetPill speaks English, German, French, Spanish, Italian, Portuguese, Russian, Japanese, Korean and Simplified Chinese. There's no Android version."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5.5 12.5l4.2 4.2 8.8-9.4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5.5v13M5.5 12h13" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3.5c-3.2 4.3-6 7.7-6 11a6 6 0 0012 0c0-3.3-2.8-6.7-6-11z" fill="currentColor"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./"><img src="assets/img/icon-128.webp" alt="" width="34" height="34">PetPill</a>
+    <nav class="nav" aria-label="Main">
+      <a href="household/">Household</a>
+      <a href="health-record/">Health record</a>
+      <a href="vet-report/">Vet report</a>
+      <a href="widgets/">Widgets &amp; Watch</a>
+      <a href="support/">Support</a>
+    </nav>
+    <a class="header-badge" href="https://apps.apple.com/app/id6760020801"><img src="assets/badges/app-store-black-en.svg" alt="Download on the App Store" width="120" height="40"></a>
+    <details class="lang">
+      <summary aria-label="Language"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-name">English</span><span class="lang-code" aria-hidden="true">EN</span></summary>
+      <div class="lang-panel">
+        <a href="./" hreflang="en" lang="en" aria-current="true">English</a>
+        <a href="de/" hreflang="de" lang="de">Deutsch</a>
+        <a href="fr/" hreflang="fr" lang="fr">Français</a>
+        <a href="es/" hreflang="es" lang="es">Español</a>
+        <a href="it/" hreflang="it" lang="it">Italiano</a>
+        <a href="pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+        <a href="ru/" hreflang="ru" lang="ru">Русский</a>
+        <a href="ja/" hreflang="ja" lang="ja">日本語</a>
+        <a href="ko/" hreflang="ko" lang="ko">한국어</a>
+        <a href="zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+      </div>
+    </details>
+    <details class="menu">
+      <summary aria-label="Menu"><span></span></summary>
+      <div class="menu-panel">
+        <a href="household/">Household</a>
+        <a href="health-record/">Health record</a>
+        <a href="vet-report/">Vet report</a>
+        <a href="widgets/">Widgets &amp; Watch</a>
+        <a href="support/">Support</a>
+        <a class="menu-badge" href="https://apps.apple.com/app/id6760020801"><img src="assets/badges/app-store-black-en.svg" alt="Download on the App Store" width="132" height="44"></a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="hero on-blue">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Pet medication reminders</span>
+      <h1 class="display"><span class="box">Never miss</span><span class="line">a dose again</span></h1>
+      <p class="lead">Medications, meals, chores and vet visits in one app, with a reminder for each. Everyone at home sees who gave what.</p>
+      <div class="cta-row">
+        <a class="badge-link" href="https://apps.apple.com/app/id6760020801"><img src="assets/badges/app-store-black-en.svg" alt="Download on the App Store" width="162" height="54"></a>
+        <span class="cta-note">Free to download. Try Pro free for 7 days.</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-stack">
+        <div class="rows">
+          <div class="row tick">
+            <div class="avatar">🐱</div>
+            <div class="meta">
+              <div class="when">08:00 · Lulu</div>
+              <div class="title">Carprofen</div>
+              <div class="sub">75 mg, give with food</div>
+            </div>
+            <div class="end">
+              <div class="rail"><div class="t">08:02</div><div class="d">75 mg</div></div>
+              <div class="end-stack">
+                <span class="mark ring"></span>
+                <span class="tap"></span>
+                <span class="mark done"><svg><use href="#i-check"/></svg></span>
+              </div>
+            </div>
+            <span class="sticker">💊 Logged</span>
+          </div>
+          <div class="row">
+            <div class="avatar">🐶</div>
+            <div class="meta">
+              <div class="when">07:30 · Loki</div>
+              <div class="title">Breakfast</div>
+              <div class="sub">Dry food · 2 scoops</div>
+            </div>
+            <div class="end"><span class="mark done"><svg><use href="#i-check"/></svg></span></div>
+            <span class="sticker left">🍗 Fed</span>
+          </div>
+          <div class="row">
+            <div class="avatar">🐶</div>
+            <div class="meta">
+              <div class="when">09:15 · Loki</div>
+              <div class="title">Weigh-in</div>
+            </div>
+            <div class="end">
+              <div class="rail"><div class="v">4.4 kg</div><div class="d">+120 g</div></div>
+              <span class="mark done"><svg><use href="#i-check"/></svg></span>
+            </div>
+            <span class="sticker left tilt">📈 Weighed</span>
+          </div>
+        </div>
+        <img class="hero-pet pet-kitten float slow" src="assets/img/kitten-sit.webp" alt="" width="150" height="210">
+        <img class="hero-pet pet-puppy float" src="assets/img/puppy-happy.webp" alt="" width="210" height="255">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reminders -->
+<section class="section">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">⏰ Reminders</span>
+      <h2 class="h2">A reminder, a tap, <span class="accent">done.</span></h2>
+      <p class="lead">Pills, liquids, injections, chewables: set the times once and PetPill reminds you at each one.</p>
+      <ol class="steps">
+        <li><span><strong>It reminds you when a dose is due,</strong> or up to an hour early if you'd rather get ready.</span></li>
+        <li><span><strong>Mark it given from the notification.</strong> Press and hold it: no unlocking, no opening the app.</span></li>
+        <li><span><strong>Everyone at home sees it.</strong> Their reminder goes quiet, so nobody gives a second dose.</span></li>
+      </ol>
+      <p class="small">Refills too: tell PetPill how many doses are in the bottle and it warns you before it runs out.</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="lock">
+        <div class="clock"><div class="date">Monday, 6 June</div><div class="time">7:58</div></div>
+        <div class="notif">
+          <img src="assets/img/icon-128.webp" alt="">
+          <div><b>Carprofen for Lulu</b><span>75 mg · give with some food</span></div>
+          <time>now</time>
+        </div>
+        <div class="actions-menu">
+          <div>Mark as given</div>
+          <div>Remind in 15 min</div>
+          <div class="danger">Skip</div>
+        </div>
+      </div>
+      <img class="stage-pet float" src="assets/img/kitten-walk.webp" alt="" style="width:150px;right:-30px;top:-70px">
+    </div>
+  </div>
+</section>
+
+<!-- Household -->
+<section class="section white">
+  <div class="wrap split flip">
+    <div class="split-copy">
+      <span class="eyebrow">🏠 Household</span>
+      <h2 class="h2">Care <span class="accent">together.</span></h2>
+      <p class="lead">Share a pet with your partner, or anyone you live with. Every dose says who gave it, and when.</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>The same schedule on everyone's iPhone</li>
+        <li>Log a dose or a meal, and everyone else's reminder goes quiet</li>
+        <li>Tap a face to see who gave it, in full</li>
+      </ul>
+      <a class="more" href="household/">How household sharing works</a>
+    </div>
+    <div class="stage soft" aria-hidden="true">
+      <div class="circle-card">
+        <div class="circle-head">
+          <div class="avatar">🐶</div>
+          <div><b>Loki</b><span>Dog · you and 1 other</span></div>
+        </div>
+        <div class="seats">
+          <div class="seat"><i class="you">AN</i>You</div>
+          <div class="seat"><i class="sarah">SA</i>Sarah</div>
+          <div class="seat"><i class="invite">+</i>Invite</div>
+        </div>
+      </div>
+      <div style="height:26px"></div>
+      <div class="popover"><i>SA</i>Given by Sarah</div>
+      <div class="row">
+        <div class="avatar">🐶<span class="who">SA</span></div>
+        <div class="meta">
+          <div class="when">08:00 · Loki</div>
+          <div class="title">Insulin</div>
+          <div class="sub">2 U, with breakfast</div>
+        </div>
+        <div class="end">
+          <div class="rail"><div class="t">08:02</div><div class="d">2 U</div></div>
+          <span class="mark done"><svg><use href="#i-check"/></svg></span>
+        </div>
+      </div>
+      <img class="stage-pet float slow" src="assets/img/puppy-wink.webp" alt="" style="width:128px;right:-22px;top:-78px">
+    </div>
+  </div>
+</section>
+
+<!-- Health record -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">📋 Health record</span>
+      <h2 class="h2" style="margin-top:18px">Everything your vet asks, <span class="accent">already written down.</span></h2>
+      <p class="lead">Log it as it happens, in a tap. When the vet asks "since when?", the answer is in your pocket.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="tile">🍽️</div>
+        <h3>Meals</h3>
+        <p>Up to four meal times a day, each with its food and portion. One tap marks it fed for everyone.</p>
+      </div>
+      <div class="card">
+        <div class="tile">⚖️</div>
+        <h3>Weight</h3>
+        <p>Weigh-ins on a chart in kg or lb, with a target if you set one, and a reminder to weigh.</p>
+        <svg class="spark mini" viewBox="0 0 300 70" aria-hidden="true"><path d="M4 52 C 40 50, 60 46, 90 44 S 150 30, 180 32 S 240 20, 296 14" fill="none" stroke="#456af7" stroke-width="3.5" stroke-linecap="round"/><circle cx="296" cy="14" r="5" fill="#456af7"/></svg>
+      </div>
+      <div class="card">
+        <div class="tile">🚽</div>
+        <h3>Toilet log</h3>
+        <p>Pees and poos in one tap, counted by day. "How long has this been going on?" finally has an answer.</p>
+        <div class="week mini" aria-hidden="true">
+          <span class="d">M</span><span class="d">T</span><span class="d">W</span><span class="d">T</span><span class="d">F</span><span class="d">S</span><span class="d today">S</span>
+          <span class="n pee">3</span><span class="n pee">4</span><span class="n pee">3</span><span class="n pee">5</span><span class="n pee">3</span><span class="n pee">4</span><span class="n pee">2</span>
+          <span class="n poo">1</span><span class="n poo">2</span><span class="n zero">–</span><span class="n poo">1</span><span class="n poo">1</span><span class="n poo">2</span><span class="n poo">1</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="tile">🫁</div>
+        <h3>Breathing rate</h3>
+        <p>For a pet on heart or lung medication: a timed count of breaths, charted against the threshold you set.</p>
+      </div>
+      <div class="card">
+        <div class="tile">✂️</div>
+        <h3>Chores</h3>
+        <p>Nails, baths, the litter box. Each one shows up on its day, with a reminder, and whoever does it ticks it off.</p>
+      </div>
+      <div class="card">
+        <div class="tile">🏥</div>
+        <h3>Vet visits</h3>
+        <p>Check-ups, vaccinations, dental: repeat schedules, reminders a week, a day or an hour before, and a note after.</p>
+      </div>
+    </div>
+    <p style="margin-top:30px"><a class="more" href="health-record/">See everything PetPill records</a></p>
+  </div>
+</section>
+
+<!-- Vet report -->
+<section class="section white">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">📄 Vet report</span>
+      <h2 class="h2">The whole story, <span class="accent">on one page.</span></h2>
+      <p class="lead">Turn any period of your pet's record into a PDF: doses with an adherence rate, vet visits, weight, breathing rate, appetite and toilet visits.</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>Preview it, then send it by Mail, Messages or AirDrop</li>
+        <li>Honest numbers: a gap in the record is shown as a gap</li>
+        <li>Printed to read in black and white</li>
+      </ul>
+      <a class="more" href="vet-report/">What's in the vet report</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="pdf">
+        <header><div><b>Loki</b><span>Dog · 7 years</span></div><div style="text-align:right"><span>Vet report</span><span>1 – 30 September</span></div></header>
+        <h4>Medications</h4>
+        <table>
+          <tr><th>Medication</th><th class="num">Given</th><th class="num">Missed</th><th class="num">Rate</th></tr>
+          <tr><td>Insulin, 2 U</td><td class="num">58</td><td class="num">2</td><td class="num">97%</td></tr>
+          <tr><td>Vetmedin, 1.25 mg</td><td class="num">60</td><td class="num">0</td><td class="num">100%</td></tr>
+        </table>
+        <h4>Weight</h4>
+        <svg viewBox="0 0 400 70" style="width:100%;height:60px"><path d="M4 50 L 70 46 L 140 44 L 210 36 L 280 34 L 350 24 L 396 20" fill="none" stroke="#111" stroke-width="2.4"/><g fill="#111"><circle cx="4" cy="50" r="3.5"/><circle cx="140" cy="44" r="3.5"/><circle cx="280" cy="34" r="3.5"/><circle cx="396" cy="20" r="3.5"/></g></svg>
+        <h4>Resting breathing rate</h4>
+        <table>
+          <tr><th>Period</th><th class="num">Median</th><th class="num">Range</th><th class="num">Over</th></tr>
+          <tr><td>1 – 14 Sep</td><td class="num">26</td><td class="num">22–31</td><td class="num">1</td></tr>
+          <tr><td>15 – 30 Sep</td><td class="num">23</td><td class="num">20–27</td><td class="num">0</td></tr>
+        </table>
+        <p class="foot">Threshold set in the app for this pet, not a clinical reference range.</p>
+      </div>
+      <img class="stage-pet float" src="assets/img/puppy-tilt.webp" alt="" style="width:112px;right:-18px;top:-112px">
+    </div>
+  </div>
+</section>
+
+<!-- Widgets & Watch -->
+<section class="section">
+  <div class="wrap split flip">
+    <div class="split-copy">
+      <span class="eyebrow">⌚ Widgets &amp; Apple Watch</span>
+      <h2 class="h2">Log it <span class="accent">without opening the app.</span></h2>
+      <p class="lead">What's due next sits on your Home Screen and Lock Screen. Tap Give and it's recorded. Today's doses are on your wrist too.</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>Widgets for the next dose, the whole day, the next vet visit, meals and the toilet log</li>
+        <li>Meal reminders as a Live Activity, with Fed on the Lock Screen</li>
+        <li>The Apple Watch app is free</li>
+      </ul>
+      <a class="more" href="widgets/">All widgets and the Watch app</a>
+    </div>
+    <div class="stage soft" aria-hidden="true">
+      <div style="display:flex;gap:26px;justify-content:center;align-items:center;flex-wrap:wrap">
+        <div class="widget">
+          <div class="w-top"><div class="avatar">🐶</div><b>Loki</b></div>
+          <div class="w-med">Insulin, 2 U</div>
+          <div class="w-time">20:00</div>
+          <div class="w-btn">Give</div>
+        </div>
+        <div class="watch">
+          <div class="w-title">Today</div>
+          <div class="w-item"><b>Insulin · Loki</b><span>20:00 · 2 U</span></div>
+          <div class="w-give">Give</div>
+          <div class="w-item" style="opacity:.7"><b>Carprofen · Lulu</b><span>21:00 · 75 mg</span></div>
+        </div>
+      </div>
+      <img class="stage-pet float slow" src="assets/img/kitten-play.webp" alt="" style="width:132px;right:36px;top:-112px">
+    </div>
+  </div>
+</section>
+
+<!-- Free vs Pro -->
+<section class="section white" id="pricing">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Free &amp; Pro</span>
+      <h2 class="h2" style="margin-top:18px">Start free. <span class="accent">Add Pro when you need it.</span></h2>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <p class="plan-sub">For one pet on one medication.</p>
+        <ul class="ticks">
+          <li>1 pet, 1 medication and 1 vet visit</li>
+          <li>Dose reminders, with buttons on the notification</li>
+          <li>Dose history and search</li>
+          <li>The Apple Watch app</li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <h3>PetPill Pro</h3>
+        <p class="plan-sub">For every pet and everyone who looks after them.</p>
+        <ul class="ticks">
+          <li>Unlimited pets, medications and vet visits</li>
+          <li>Household sharing</li>
+          <li>Meals and chores, with reminders</li>
+          <li>Home Screen and Lock Screen widgets</li>
+          <li>Refill reminders</li>
+          <li>Weight, toilet log and breathing rate</li>
+          <li>The vet report</li>
+        </ul>
+        <img class="plan-pet" src="assets/img/puppy-stand.webp" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <p class="plans-note">Monthly, yearly, or once for life. The yearly plan starts with a 7-day free trial for new subscribers. Prices show in the App Store, in your currency.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center"><h2 class="h2">Questions</h2></div>
+    <div class="faq">
+      <details>
+        <summary>Is PetPill free?</summary>
+        <div class="answer"><p>Yes. The free version covers one pet, one medication and one vet visit, with reminders, dose history and the Apple Watch app. PetPill Pro unlocks everything else, monthly, yearly or once for life. The yearly plan starts with a 7-day free trial for new subscribers.</p></div>
+      </details>
+      <details>
+        <summary>Which pets does it work for?</summary>
+        <div class="answer"><p>Dogs, cats, rabbits, hamsters, birds, fish, turtles, and any other pet you type in. With Pro you can add as many as you have.</p></div>
+      </details>
+      <details>
+        <summary>Can my partner use PetPill for the same pet?</summary>
+        <div class="answer"><p>Yes. Share a pet with your partner or anyone you live with, and you both see the same schedule and who gave each dose. Inviting needs PetPill Pro; joining is free. A Pro subscription also covers your Apple Family Sharing group.</p><p><a href="household/">How household sharing works</a></p></div>
+      </details>
+      <details>
+        <summary>Do I have to open the app to log a dose?</summary>
+        <div class="answer"><p>No. Mark a dose as given right from its notification, from a widget on your Home Screen or Lock Screen, or from your Apple Watch.</p></div>
+      </details>
+      <details>
+        <summary>Where is my pet's data stored?</summary>
+        <div class="answer"><p>Your pets' records are stored in your own iCloud account and sync across your iPhone, iPad and Apple Watch. The <a href="https://arabianprinceee.github.io/petpill-support/privacy.html">privacy policy</a> lists everything the app collects.</p></div>
+      </details>
+      <details>
+        <summary>Does PetPill give veterinary advice?</summary>
+        <div class="answer"><p>No. PetPill reminds and records. Any threshold or target is a number you set, and the app never tells you what a reading means. Always follow your vet.</p></div>
+      </details>
+      <details>
+        <summary>Which devices and languages?</summary>
+        <div class="answer"><p>iPhone and iPad with iOS 17.6 or later, and Apple Watch. PetPill speaks English, German, French, Spanish, Italian, Portuguese, Russian, Japanese, Korean and Simplified Chinese. There's no Android version.</p></div>
+      </details>
+    </div>
+    <p style="text-align:center;margin-top:30px"><a class="more" href="support/">More answers on the support page</a></p>
+  </div>
+</section>
+
+<!-- Closing -->
+<section class="closing">
+  <div class="wrap">
+    <h2 class="display"><span class="box">Pet health</span><span class="line">under control</span></h2>
+    <p class="lead">Free to download, for iPhone, iPad and Apple Watch.</p>
+    <div class="cta-row">
+      <a class="badge-link" href="https://apps.apple.com/app/id6760020801"><img src="assets/badges/app-store-black-en.svg" alt="Download on the App Store" width="162" height="54"></a>
+    </div>
+    <div class="closing-pets" aria-hidden="true">
+      <img src="assets/img/kitten-walk.webp" alt="">
+      <img class="lie" src="assets/img/puppy-lie.webp" alt="">
+      <img src="assets/img/puppy-run.webp" alt="">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="./"><img src="assets/img/icon-128.webp" alt="" width="34" height="34">PetPill</a>
+        <p>Medication reminders and a health record for your pets.</p>
+      </div>
+      <div>
+        <h4>App</h4>
+        <ul>
+          <li><a href="household/">Household</a></li>
+          <li><a href="health-record/">Health record</a></li>
+          <li><a href="vet-report/">Vet report</a></li>
+          <li><a href="widgets/">Widgets &amp; Watch</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="support/">Support</a></li>
+          <li><a href="mailto:petpillsupport@gmail.com">Email us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="https://arabianprinceee.github.io/petpill-support/privacy.html">Privacy policy</a></li>
+          <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 Anas Ben Mustafa. PetPill reminds and records; it does not give veterinary advice.</p>
+      <p>Apple, the Apple logo, iPhone, iPad and Apple Watch are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

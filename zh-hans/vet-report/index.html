@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>兽医报告：把宠物档案生成 PDF | PetPill</title>
+<meta name="description" content="把宠物档案中任意一段时间生成给兽医的 PDF：用药与依从性、兽医预约、体重、静息呼吸频率、食欲和如厕记录。">
+<meta name="apple-itunes-app" content="app-id=6760020801">
+<meta name="theme-color" content="#456af7">
+<link rel="icon" href="../../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="canonical" href="https://arabianprinceee.github.io/petpill/zh-hans/vet-report/">
+<link rel="alternate" hreflang="en" href="https://arabianprinceee.github.io/petpill/vet-report/">
+<link rel="alternate" hreflang="de" href="https://arabianprinceee.github.io/petpill/de/vet-report/">
+<link rel="alternate" hreflang="fr" href="https://arabianprinceee.github.io/petpill/fr/vet-report/">
+<link rel="alternate" hreflang="es" href="https://arabianprinceee.github.io/petpill/es/vet-report/">
+<link rel="alternate" hreflang="it" href="https://arabianprinceee.github.io/petpill/it/vet-report/">
+<link rel="alternate" hreflang="pt-BR" href="https://arabianprinceee.github.io/petpill/pt-br/vet-report/">
+<link rel="alternate" hreflang="ru" href="https://arabianprinceee.github.io/petpill/ru/vet-report/">
+<link rel="alternate" hreflang="ja" href="https://arabianprinceee.github.io/petpill/ja/vet-report/">
+<link rel="alternate" hreflang="ko" href="https://arabianprinceee.github.io/petpill/ko/vet-report/">
+<link rel="alternate" hreflang="zh-Hans" href="https://arabianprinceee.github.io/petpill/zh-hans/vet-report/">
+<link rel="alternate" hreflang="x-default" href="https://arabianprinceee.github.io/petpill/vet-report/">
+<meta property="og:url" content="https://arabianprinceee.github.io/petpill/zh-hans/vet-report/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="把完整经过带给兽医 | PetPill">
+<meta property="og:description" content="任意时间段的宠物档案，生成兽医一分钟就能看完的 PDF。">
+<meta property="og:image" content="https://arabianprinceee.github.io/petpill/assets/img/og.png">
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../"><img src="../../assets/img/icon-128.webp" alt="" width="34" height="34">PetPill</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../household/">家庭</a>
+      <a href="../health-record/">健康档案</a>
+      <a href="../vet-report/" aria-current="page">兽医报告</a>
+      <a href="../widgets/">小组件与 Watch</a>
+      <a href="../support/">支持</a>
+    </nav>
+    <a class="header-badge" href="https://apps.apple.com/app/id6760020801"><img src="../../assets/badges/app-store-black-zh-hans.svg" alt="在 App Store 下载" width="120" height="40"></a>
+    <details class="lang">
+      <summary aria-label="语言"><span class="lang-globe" aria-hidden="true">🌐</span><span class="lang-name">简体中文</span><span class="lang-code" aria-hidden="true">ZH</span></summary>
+      <div class="lang-panel">
+        <a href="../../vet-report/" hreflang="en" lang="en">English</a>
+        <a href="../../de/vet-report/" hreflang="de" lang="de">Deutsch</a>
+        <a href="../../fr/vet-report/" hreflang="fr" lang="fr">Français</a>
+        <a href="../../es/vet-report/" hreflang="es" lang="es">Español</a>
+        <a href="../../it/vet-report/" hreflang="it" lang="it">Italiano</a>
+        <a href="../../pt-br/vet-report/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+        <a href="../../ru/vet-report/" hreflang="ru" lang="ru">Русский</a>
+        <a href="../../ja/vet-report/" hreflang="ja" lang="ja">日本語</a>
+        <a href="../../ko/vet-report/" hreflang="ko" lang="ko">한국어</a>
+        <a href="../../zh-hans/vet-report/" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a>
+      </div>
+    </details>
+    <details class="menu">
+      <summary aria-label="菜单"><span></span></summary>
+      <div class="menu-panel">
+        <a href="../household/">家庭</a>
+        <a href="../health-record/">健康档案</a>
+        <a href="../vet-report/" aria-current="page">兽医报告</a>
+        <a href="../widgets/">小组件与 Watch</a>
+        <a href="../support/">支持</a>
+        <a class="menu-badge" href="https://apps.apple.com/app/id6760020801"><img src="../../assets/badges/app-store-black-zh-hans.svg" alt="在 App Store 下载" width="132" height="44"></a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main>
+
+<section class="hero page-hero on-blue">
+  <img class="paw left" src="../../assets/img/paw-cat.webp" alt="" aria-hidden="true">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">兽医报告 <span class="pro-chip" style="background:#fff;color:var(--blue)">PRO</span></span>
+      <h1 class="display"><span class="box">完整经过</span><span class="line">带给兽医</span></h1>
+      <p class="lead">把宠物档案中任意一段时间生成兽医一分钟就能看完的 PDF。预览后，就诊前发送，或在诊室里直接出示。</p>
+      <div class="cta-row">
+        <a class="badge-link" href="https://apps.apple.com/app/id6760020801"><img src="../../assets/badges/app-store-black-zh-hans.svg" alt="在 App Store 下载" width="162" height="54"></a>
+        <span class="cta-note">免费下载。Pro 可免费试用 7 天。</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-stack" style="padding-bottom:210px">
+        <div class="pdf">
+          <header><div><b>洛基</b><span>狗 · 7 岁</span></div><div style="text-align:right"><span>兽医报告</span><span>9月1日–30日</span></div></header>
+          <h4>依从性</h4>
+          <table>
+            <tr><th>药物</th><th class="num">已给</th><th class="num">跳过</th><th class="num">错过</th><th class="num">比率</th></tr>
+            <tr><td>胰岛素，2单位</td><td class="num">57</td><td class="num">1</td><td class="num">2</td><td class="num">95%</td></tr>
+            <tr><td>维多美定，1.25mg</td><td class="num">60</td><td class="num">0</td><td class="num">0</td><td class="num">100%</td></tr>
+          </table>
+          <h4>食欲</h4>
+          <table>
+            <tr><th>周</th><th class="num">全吃完</th><th class="num">吃了一些</th><th class="num">没吃</th></tr>
+            <tr><td>9月22日–28日</td><td class="num">12</td><td class="num">2</td><td class="num">0</td></tr>
+          </table>
+          <p class="foot">错过的剂量是没有记录的给药时间。跳过的剂量是被记录为跳过的。</p>
+        </div>
+        <img class="hero-pet pet-puppy float" src="../../assets/img/puppy-tilt.webp" alt="" style="width:140px;right:0;bottom:0">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">包含什么</span>
+      <h2 class="h2" style="margin-top:18px">兽医会问的，<span class="accent">按兽医问的顺序。</span></h2>
+      <p class="lead">选择一只宠物和时间段：最近 7 天或 30 天、3 个月、本月、全部，或任意日期。不需要的部分可以关闭。</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="tile">💊</div><h3>药物与用药计划</h3><p>时间段内的每种药物，及其剂量和计划。</p></div>
+      <div class="card"><div class="tile">✅</div><h3>依从性</h3><p>已给、跳过和错过的剂量，以及每种药物的比率。</p></div>
+      <div class="card"><div class="tile">🏥</div><h3>兽医预约</h3><p>时间段内的每次预约，及就诊后写的备注。</p></div>
+      <div class="card"><div class="tile">⚖️</div><h3>体重</h3><p>每次称重都有图表和表格，以及前后的变化。</p></div>
+      <div class="card"><div class="tile">🫁</div><h3>静息呼吸频率</h3><p>与你的阈值对比的图表，以及在每次剂量调整处分段的表格，看看上次调整是否有效。</p></div>
+      <div class="card"><div class="tile">🍽️</div><h3>食欲与如厕记录</h3><p>每周吃了多少，以及你记录的小便和大便。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">如何生成</span>
+      <h2 class="h2">就诊前<span class="accent">点三下。</span></h2>
+      <ol class="steps" style="margin-top:26px">
+        <li><span>打开你的宠物或历史记录，点按顶部的<strong>报告</strong>按钮。</span></li>
+        <li><span><strong>选择时间段</strong>和要包含的部分。</span></li>
+        <li><span><strong>预览后共享</strong>，通过邮件、信息或隔空投送发送，或直接打印。</span></li>
+      </ol>
+      <p class="small">纸张为 A4 或 US Letter，依你所在国家而定。</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="pdf" style="transform:rotate(1.5deg)">
+        <header><div><b>露露</b><span>猫 · 11 岁</span></div><div style="text-align:right"><span>兽医报告</span><span>7月1日–9月30日</span></div></header>
+        <h4>静息呼吸频率</h4>
+        <svg viewBox="0 0 400 110" style="width:100%;height:96px">
+          <line x1="0" y1="26" x2="400" y2="26" stroke="#111" stroke-dasharray="7 6" stroke-width="1.6"/>
+          <line x1="190" y1="0" x2="190" y2="110" stroke="#111" stroke-dasharray="2 4" stroke-width="1.4"/>
+          <path d="M6 60 L 40 52 L 74 44 L 108 30 L 142 20 L 176 36 L 210 54 L 244 64 L 278 70 L 312 66 L 346 72 L 394 70" fill="none" stroke="#111" stroke-width="2"/>
+          <g fill="#111"><circle cx="6" cy="60" r="3.4"/><circle cx="74" cy="44" r="3.4"/><circle cx="210" cy="54" r="3.4"/><circle cx="278" cy="70" r="3.4"/><circle cx="394" cy="70" r="3.4"/></g>
+          <circle cx="142" cy="20" r="4" fill="#fff" stroke="#111" stroke-width="2"/>
+        </svg>
+        <table>
+          <tr><th>期间</th><th class="num">中位数</th><th class="num">范围</th><th class="num">超出</th></tr>
+          <tr><td>7月1日–8月14日</td><td class="num">34</td><td class="num">26–44</td><td class="num">3</td></tr>
+          <tr><td>8月15日–9月30日</td><td class="num">27</td><td class="num">22–31</td><td class="num">0</td></tr>
+        </table>
+        <p class="foot">点线：8月15日调整了呋塞米。虚线：你在 App 中为这只宠物设定的阈值，并非临床参考范围。有 6 天没有测量。</p>
+      </div>
+      <img class="stage-pet float slow" src="../../assets/img/kitten-sit.webp" alt="" style="width:120px;left:-30px;bottom:-56px">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split flip">
+    <div class="split-copy">
+      <span class="eyebrow">诚实的设计</span>
+      <h2 class="h2">空缺就<span class="accent">显示为空缺。</span></h2>
+      <ul class="ticks" style="margin-top:26px">
+        <li>期间内停用或删除的疗程显示为一条短线，而不是编造的比率。</li>
+        <li>没有测量呼吸的天数会被统计并打印出来，绝不被平均值掩盖。</li>
+        <li>阈值标注为你设定的值，而不是临床范围。</li>
+        <li>专为黑白打印设计：虚线和空心标记，从不只靠颜色。</li>
+      </ul>
+    </div>
+    <div class="callout">
+      <h3>你的记录，不是诊断</h3>
+      <p>PetPill 只打印你记录的内容，不解读，也不提供建议：那是兽医的工作，报告是为了帮助兽医。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section tight white">
+  <div class="wrap">
+    <div class="pages-strip">
+      <a href="../household/"><b>家庭</b><span>和全家共享宠物。</span></a>
+      <a href="../health-record/"><b>健康档案</b><span>喂食、体重、如厕、呼吸、护理事项和兽医预约。</span></a>
+      <a href="../widgets/"><b>小组件与 Watch</b><span>不用打开 App 也能记录。</span></a>
+      <a href="../support/"><b>支持</b><span>常见解答和联系方式。</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2 class="display"><span class="box">宠物健康</span><span class="line">尽在掌握</span></h2>
+    <p class="lead">免费下载，适用于 iPhone、iPad 和 Apple Watch。</p>
+    <div class="cta-row">
+      <a class="badge-link" href="https://apps.apple.com/app/id6760020801"><img src="../../assets/badges/app-store-black-zh-hans.svg" alt="在 App Store 下载" width="162" height="54"></a>
+    </div>
+    <div class="closing-pets" aria-hidden="true">
+      <img src="../../assets/img/kitten-walk.webp" alt="">
+      <img src="../../assets/img/puppy-happy.webp" alt="">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="../"><img src="../../assets/img/icon-128.webp" alt="" width="34" height="34">PetPill</a>
+        <p>为你的宠物提供用药提醒和健康档案。</p>
+      </div>
+      <div>
+        <h4>App</h4>
+        <ul>
+          <li><a href="../household/">家庭</a></li>
+          <li><a href="../health-record/">健康档案</a></li>
+          <li><a href="../vet-report/">兽医报告</a></li>
+          <li><a href="../widgets/">小组件与 Watch</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助</h4>
+        <ul>
+          <li><a href="../support/">支持</a></li>
+          <li><a href="mailto:petpillsupport@gmail.com">给我们发邮件</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>法律信息</h4>
+        <ul>
+          <li><a href="https://arabianprinceee.github.io/petpill-support/privacy.html">隐私政策（英文）</a></li>
+          <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">使用条款</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 Anas Ben Mustafa. PetPill 负责提醒和记录，不提供兽医建议。</p>
+      <p>Apple、Apple 标志、iPhone、iPad 和 Apple Watch 是 Apple Inc. 在美国和其他国家和地区注册的商标。App Store 是 Apple Inc. 的服务标记。</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
