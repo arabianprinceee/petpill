@@ -2,7 +2,7 @@
 // What this collects is section 2.7 of the privacy policy (privacy.html in petpill-support,
 // PRIVACY_POLICY.md in the app repo). Collect something new only after both say so.
 (function () {
-  if (location.hostname !== 'arabianprinceee.github.io') return; // local previews count nothing
+  if (location.hostname.replace(/^www\./, '') !== 'petpillapp.com') return; // local previews count nothing
 
   var TOKEN = 'phc_A5wqSjbENBmYyQxgZ8YpGshUmfqH5sUHiwyFaKuNoRBH'; // the project's public write-only key
 
