@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PetPill&nbsp;: rappels de médicaments pour votre animal</title>
-<meta name="description" content="PetPill vous rappelle quand votre animal doit prendre son médicament et réunit toute sa routine dans une app&nbsp;: doses, repas, tâches, visites vétérinaires, poids et un rapport vétérinaire. Partagez-la avec tout le foyer.">
+<meta name="description" content="PetPill vous rappelle quand votre animal doit prendre son médicament et réunit toute sa routine dans une app&nbsp;: doses, repas, tâches, visites vétérinaires, poids, prises de sang et un rapport vétérinaire. Partagez-la avec tout le foyer.">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../favicon-32.png" sizes="32x32">
@@ -68,7 +68,7 @@
       "name": "Mon ou ma partenaire peut-il utiliser PetPill pour le même animal ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui. Partagez un animal avec votre partenaire ou toute personne avec qui vous vivez: vous voyez le même planning et qui a donné chaque dose. Inviter nécessite PetPill Pro; rejoindre est gratuit. Un abonnement Pro couvre aussi votre groupe de partage familial. Comment fonctionne le partage avec le foyer"
+        "text": "Oui. Partagez un animal avec votre partenaire ou toute personne avec qui vous vivez : vous voyez le même planning et qui a donné chaque dose. Inviter nécessite PetPill Pro ; rejoindre est gratuit. Un abonnement Pro couvre aussi votre groupe de partage familial. Hors du groupe, il couvre quand même les repas, les tâches, le poids, les toilettes, la respiration et les prises de sang des animaux que vous partagez. Comment fonctionne le partage avec le foyer"
       }
     },
     {
@@ -345,13 +345,51 @@
   </div>
 </section>
 
+<!-- Blood tests -->
+<section class="section">
+  <div class="wrap split flip">
+    <div class="split-copy">
+      <span class="eyebrow">🩸 Prises de sang</span>
+      <h2 class="h2">Le compte rendu du labo, <span class="accent">lu pour vous.</span></h2>
+      <p class="lead">Ajoutez-le en PDF, en photo ou en scannant le papier. PetPill lit les valeurs, et vous vérifiez seulement celles dont il n’est pas sûr.</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>Chaque valeur tracée face à l’intervalle de son labo</li>
+        <li>À côté du jour où un traitement a commencé ou changé de dose</li>
+        <li>Lu sur votre iPhone, pas sur un serveur</li>
+      </ul>
+      <a class="more" href="health-record/#blood-tests">Comment fonctionnent les prises de sang</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="bt-card">
+        <div class="bt-head">
+          <div><b>T4</b><span>Lulu · Thyroxine</span></div>
+          <div class="bt-now"><b>2,9 <small>µg/dL</small></b><span>intervalle du labo 0,8–4,7</span></div>
+        </div>
+        <svg viewBox="0 0 320 150">
+          <rect x="0" y="67" width="320" height="52" rx="4" fill="#2fb45a" opacity=".14"/>
+          <line x1="0" y1="135" x2="320" y2="135" stroke="#e3e6ee" stroke-width="1.5"/>
+          <line x1="92" y1="16" x2="92" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <line x1="160" y1="16" x2="160" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <text x="88" y="11" text-anchor="end">Début</text>
+          <text x="164" y="11">Dose modifiée</text>
+          <polyline points="16,39.4 74,31.4 125,55.4 192,78.0 251,88.7 293,91.3" fill="none" stroke="#456af7" stroke-width="2.4" stroke-linejoin="round" opacity=".5"/>
+          <circle cx="16" cy="39.4" r="5" fill="#ef8a00"/><circle cx="74" cy="31.4" r="5" fill="#ef8a00"/><circle cx="125" cy="55.4" r="5" fill="#ef8a00"/><circle cx="192" cy="78.0" r="5" fill="#456af7"/><circle cx="251" cy="88.7" r="5" fill="#456af7"/><circle cx="293" cy="91.3" r="5" fill="#456af7"/>
+          <text class="axis" x="14" y="149">mars</text><text class="axis" x="87" y="149">mai</text><text class="axis" x="160" y="149">juil.</text><text class="axis" x="234" y="149">sept.</text>
+        </svg>
+        <p class="bt-legend">Lignes pointillées&nbsp;: Thiamazole</p>
+      </div>
+      <img class="stage-pet float slow" src="../assets/img/kitten-sit.webp" alt="" style="width:112px;left:-26px;top:-128px">
+    </div>
+  </div>
+</section>
+
 <!-- Vet report -->
 <section class="section white">
   <div class="wrap split">
     <div class="split-copy">
       <span class="eyebrow">📄 Rapport vétérinaire</span>
       <h2 class="h2">Toute l’histoire <span class="accent">sur une page.</span></h2>
-      <p class="lead">Transformez n’importe quelle période du carnet de votre animal en PDF&nbsp;: doses avec taux d’observance, visites vétérinaires, poids, fréquence respiratoire, appétit et passages aux toilettes.</p>
+      <p class="lead">Transformez n’importe quelle période du carnet de votre animal en PDF qui s’ouvre sur ses allergies&nbsp;: doses avec taux d’observance, prises de sang, visites vétérinaires, poids, fréquence respiratoire, appétit et passages aux toilettes.</p>
       <ul class="ticks" style="margin-bottom:26px">
         <li>Prévisualisez-le, puis envoyez-le par Mail, Messages ou AirDrop</li>
         <li>Des chiffres honnêtes&nbsp;: un trou dans le carnet reste un trou</li>
@@ -446,7 +484,7 @@
           <li>Repas et tâches, avec rappels</li>
           <li>Widgets d’écran d’accueil et d’écran verrouillé</li>
           <li>Rappels de recharge</li>
-          <li>Poids, journal des passages et fréquence respiratoire</li>
+          <li>Poids, journal des passages, fréquence respiratoire et prises de sang</li>
           <li>Le rapport vétérinaire</li>
         </ul>
         <img class="plan-pet" src="../assets/img/puppy-stand.webp" alt="" aria-hidden="true">
@@ -463,15 +501,7 @@
     <div class="faq">
       <details>
         <summary>PetPill est-il gratuit&nbsp;?</summary>
-        <div class="answer"><p>Oui. La version gratuite couvre un animal, un médicament et une visite vétérinaire, avec les rappels, l’historique des doses et l’app Apple Watch. PetPill Pro débloque tout le reste, au mois, à l’année ou une fois pour toujours. L’abonnement annuel commence par 7&nbsp;jours gratuits pour les nouveaux abonnés.</p></div>
-      </details>
-      <details>
-        <summary>Pour quels animaux&nbsp;?</summary>
-        <div class="answer"><p>Chiens, chats, lapins, hamsters, oiseaux, poissons, tortues, et tout autre animal que vous saisissez. Avec Pro, vous pouvez en ajouter autant que vous en avez.</p></div>
-      </details>
-      <details>
-        <summary>Mon ou ma partenaire peut-il utiliser PetPill pour le même animal&nbsp;?</summary>
-        <div class="answer"><p>Oui. Partagez un animal avec votre partenaire ou toute personne avec qui vous vivez&nbsp;: vous voyez le même planning et qui a donné chaque dose. Inviter nécessite PetPill Pro&nbsp;; rejoindre est gratuit. Un abonnement Pro couvre aussi votre groupe de partage familial.</p><p><a href="household/">Comment fonctionne le partage avec le foyer</a></p></div>
+        <div class="answer"><p>Oui. Partagez un animal avec votre partenaire ou toute personne avec qui vous vivez&nbsp;: vous voyez le même planning et qui a donné chaque dose. Inviter nécessite PetPill Pro&nbsp;; rejoindre est gratuit. Un abonnement Pro couvre aussi votre groupe de partage familial. Hors du groupe, il couvre quand même les repas, les tâches, le poids, les toilettes, la respiration et les prises de sang des animaux que vous partagez.</p><p><a href="household/">Comment fonctionne le partage avec le foyer</a></p></div>
       </details>
       <details>
         <summary>Faut-il ouvrir l’app pour enregistrer une dose&nbsp;?</summary>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Медкарта питомца: дозы, кормление, вес и многое другое | PetPill</title>
-<meta name="description" content="Отмечайте дозы, кормление, взвешивания, туалет, частоту дыхания, задачи и визиты к ветеринару одним касанием. PetPill хранит всю медкарту питомца в одном месте.">
+<meta name="description" content="Отмечайте дозы, кормление, взвешивания, туалет, частоту дыхания, задачи и визиты к ветеринару одним касанием и добавляйте анализы крови прямо из бланка лаборатории. PetPill хранит всю медкарту питомца в одном месте.">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../../favicon-32.png" sizes="32x32">
@@ -24,7 +24,7 @@
 <meta property="og:url" content="https://petpillapp.com/ru/health-record/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Вся медкарта вашего питомца | PetPill">
-<meta property="og:description" content="Дозы, кормление, вес, туалет, частота дыхания, задачи и визиты к ветеринару, отмеченные одним касанием.">
+<meta property="og:description" content="Дозы, кормление, вес, туалет, частота дыхания, анализы крови, задачи и визиты к ветеринару — в одном месте.">
 <meta property="og:image" content="https://petpillapp.com/assets/img/og.png">
 <link rel="stylesheet" href="../../assets/css/site.css">
 <script src="../../assets/js/count.js" defer></script>
@@ -86,7 +86,7 @@
     <div class="hero-copy">
       <span class="eyebrow">Медкарта</span>
       <h1 class="display"><span class="box">Вся его</span><span class="line">медкарта</span></h1>
-      <p class="lead">Дозы, кормление, взвешивания, туалет, частота дыхания, задачи и визиты к ветеринару. Отмечено одним касанием, собрано в одном месте, готово, когда спросит ветеринар.</p>
+      <p class="lead">Дозы, кормление, взвешивания, туалет, частота дыхания, анализы крови, задачи и визиты к ветеринару. Отмечено одним касанием, собрано в одном месте, готово, когда спросит ветеринар.</p>
       <div class="cta-row">
         <a class="badge-link" href="https://apps.apple.com/app/id6760020801"><img src="../../assets/badges/app-store-black-ru.svg" alt="Загрузите в App Store" width="162" height="54"></a>
         <span class="cta-note">Бесплатно в App Store. Pro — 7 дней бесплатно.</span>
@@ -268,6 +268,52 @@
   </div>
 </section>
 
+<!-- Blood tests -->
+<section class="section" id="blood-tests">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">🩸 Анализы крови <span class="pro-chip">PRO</span></span>
+      <h2 class="h2">Анализы <span class="accent">на графике.</span></h2>
+      <p class="lead">Добавьте результаты анализов питомца в PDF, на фото или скан. PetPill прочитает показатели, а вы проверите только те, в которых он не уверен, — до того, как что-то сохранится.</p>
+      <ul class="ticks" style="margin-bottom:22px">
+        <li>Каждый показатель на графике — с интервалом своей лаборатории</li>
+        <li>Линии там, где выбранное лекарство начали или изменили дозу, — видно, что изменилось после</li>
+        <li>Закрепите до трёх показателей на странице питомца и запланируйте следующий анализ с напоминанием</li>
+        <li>Все результаты — в отчёте для ветеринара</li>
+      </ul>
+      <p class="small">Читается на вашем iPhone, а не на сервере. Лучше всего PetPill читает бланки на английском; на другом языке сверьте каждый показатель с бумагой.</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="bt-check">
+        <div class="bt-check-head"><b>MCV</b><span class="bt-flag">Проверить: 1</span></div>
+        <div class="bt-line"><span>MCV</span><mark>74,1 H</mark><span>фл</span><span>61,6–73,5</span></div>
+        <p class="bt-read">Прочитано: <b>74,1 фл</b> · интервал 61,6–73,5 · отметка H</p>
+        <div class="bt-answers"><span class="ok">Верно</span><span>Исправить</span></div>
+      </div>
+      <div style="height:22px"></div>
+      <div class="bt-card">
+        <div class="bt-head">
+          <div><b>Т4 общий</b><span>Лулу · Тироксин</span></div>
+          <div class="bt-now"><b>2,9 <small>µg/dL</small></b><span>интервал лаборатории 0,8–4,7</span></div>
+        </div>
+        <svg viewBox="0 0 320 150">
+          <rect x="0" y="67" width="320" height="52" rx="4" fill="#2fb45a" opacity=".14"/>
+          <line x1="0" y1="135" x2="320" y2="135" stroke="#e3e6ee" stroke-width="1.5"/>
+          <line x1="92" y1="16" x2="92" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <line x1="160" y1="16" x2="160" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <text x="88" y="11" text-anchor="end">Начато</text>
+          <text x="164" y="11">Доза изменена</text>
+          <polyline points="16,39.4 74,31.4 125,55.4 192,78.0 251,88.7 293,91.3" fill="none" stroke="#456af7" stroke-width="2.4" stroke-linejoin="round" opacity=".5"/>
+          <circle cx="16" cy="39.4" r="5" fill="#ef8a00"/><circle cx="74" cy="31.4" r="5" fill="#ef8a00"/><circle cx="125" cy="55.4" r="5" fill="#ef8a00"/><circle cx="192" cy="78.0" r="5" fill="#456af7"/><circle cx="251" cy="88.7" r="5" fill="#456af7"/><circle cx="293" cy="91.3" r="5" fill="#456af7"/>
+          <text class="axis" x="14" y="149">март</text><text class="axis" x="87" y="149">май</text><text class="axis" x="160" y="149">июль</text><text class="axis" x="234" y="149">сент.</text>
+        </svg>
+        <p class="bt-legend">Пунктир: Тиамазол</p>
+      </div>
+      <img class="stage-pet float" src="../../assets/img/kitten-play.webp" alt="" style="width:124px;right:-26px;top:-120px">
+    </div>
+  </div>
+</section>
+
 <!-- Chores, visits, ID -->
 <section class="section white">
   <div class="wrap">
@@ -290,7 +336,7 @@
       <div class="card">
         <div class="tile">🪪</div>
         <h3>Паспорт питомца</h3>
-        <p>Номер чипа — копируется одним касанием. День рождения — с обратным отсчётом и конфетти. Заметки для всех, кто заботится о питомце.</p>
+        <p>Аллергии, болезни, порода и чип, а телефоны ветеринара, экстренной помощи и страховой — в одно касание. Видно всем, кто ухаживает за питомцем.</p>
       </div>
       <div class="card">
         <div class="tile">🗂️</div>

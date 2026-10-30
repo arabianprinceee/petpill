@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PetPill：宠物用药提醒</title>
-<meta name="description" content="PetPill 会在宠物该吃药时提醒你，并把它的日常照护集中在一个 App 里：给药、喂食、护理事项、看兽医、体重，还有兽医报告。和家里每个人一起共享。">
+<meta name="description" content="PetPill 会在宠物该吃药时提醒你，并把它的日常照护集中在一个 App 里：给药、喂食、护理事项、看兽医、体重、验血，还有兽医报告。和家里每个人一起共享。">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../favicon-32.png" sizes="32x32">
@@ -68,7 +68,7 @@
       "name": "我的伴侣能用 PetPill 照顾同一只宠物吗？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "可以。和伴侣或任何同住的人共享宠物，你们会看到同一份日程，以及每一剂是谁给的。邀请需要 PetPill Pro，加入免费。Pro 订阅也适用于你的家人共享群组。 家庭共享的运作方式"
+        "text": "可以。和伴侣或任何同住的人共享宠物，你们会看到同一份日程，以及每一剂是谁给的。邀请需要 PetPill Pro，加入免费。Pro 订阅也适用于你的家人共享群组。群组之外，它仍覆盖你们共享的宠物：喂食、护理事项、体重、如厕、呼吸和验血。 家庭共享的运作方式"
       }
     },
     {
@@ -345,13 +345,51 @@
   </div>
 </section>
 
+<!-- Blood tests -->
+<section class="section">
+  <div class="wrap split flip">
+    <div class="split-copy">
+      <span class="eyebrow">🩸 验血</span>
+      <h2 class="h2">化验单，<span class="accent">PetPill 帮你读。</span></h2>
+      <p class="lead">以 PDF、照片或扫描纸质化验单的方式添加。PetPill 会读取数值，你只需核对它拿不准的那些。</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>每个数值都与实验室参考范围一起显示在图表上</li>
+        <li>与开始用药或调整剂量的日子并排</li>
+        <li>在你的 iPhone 上读取，而不是在服务器上</li>
+      </ul>
+      <a class="more" href="health-record/#blood-tests">了解验血功能</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="bt-card">
+        <div class="bt-head">
+          <div><b>T4</b><span>露露 · 甲状腺素</span></div>
+          <div class="bt-now"><b>2.9 <small>µg/dL</small></b><span>实验室参考范围 0.8–4.7</span></div>
+        </div>
+        <svg viewBox="0 0 320 150">
+          <rect x="0" y="67" width="320" height="52" rx="4" fill="#2fb45a" opacity=".14"/>
+          <line x1="0" y1="135" x2="320" y2="135" stroke="#e3e6ee" stroke-width="1.5"/>
+          <line x1="92" y1="16" x2="92" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <line x1="160" y1="16" x2="160" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <text x="88" y="11" text-anchor="end">开始</text>
+          <text x="164" y="11">调整剂量</text>
+          <polyline points="16,39.4 74,31.4 125,55.4 192,78.0 251,88.7 293,91.3" fill="none" stroke="#456af7" stroke-width="2.4" stroke-linejoin="round" opacity=".5"/>
+          <circle cx="16" cy="39.4" r="5" fill="#ef8a00"/><circle cx="74" cy="31.4" r="5" fill="#ef8a00"/><circle cx="125" cy="55.4" r="5" fill="#ef8a00"/><circle cx="192" cy="78.0" r="5" fill="#456af7"/><circle cx="251" cy="88.7" r="5" fill="#456af7"/><circle cx="293" cy="91.3" r="5" fill="#456af7"/>
+          <text class="axis" x="14" y="149">3月</text><text class="axis" x="87" y="149">5月</text><text class="axis" x="160" y="149">7月</text><text class="axis" x="234" y="149">9月</text>
+        </svg>
+        <p class="bt-legend">虚线：甲巯咪唑</p>
+      </div>
+      <img class="stage-pet float slow" src="../assets/img/kitten-sit.webp" alt="" style="width:112px;left:-26px;top:-128px">
+    </div>
+  </div>
+</section>
+
 <!-- Vet report -->
 <section class="section white">
   <div class="wrap split">
     <div class="split-copy">
       <span class="eyebrow">📄 兽医报告</span>
       <h2 class="h2">完整的经过，<span class="accent">一页看清。</span></h2>
-      <p class="lead">把宠物档案中任意一段时间生成 PDF：含依从率的给药记录、兽医预约、体重、呼吸频率、食欲和如厕情况。</p>
+      <p class="lead">把宠物档案中任意一段时间生成以过敏信息开头的 PDF：含依从率的给药记录、验血、兽医预约、体重、呼吸频率、食欲和如厕情况。</p>
       <ul class="ticks" style="margin-bottom:26px">
         <li>预览后，通过邮件、信息或隔空投送发送</li>
         <li>诚实的数字：档案中的空缺就显示为空缺</li>
@@ -446,7 +484,7 @@
           <li>喂食和护理事项，均带提醒</li>
           <li>主屏幕与锁定屏幕小组件</li>
           <li>补货提醒</li>
-          <li>体重、如厕记录和呼吸频率</li>
+          <li>体重、如厕记录、呼吸频率和验血</li>
           <li>兽医报告</li>
         </ul>
         <img class="plan-pet" src="../assets/img/puppy-stand.webp" alt="" aria-hidden="true">
@@ -463,15 +501,7 @@
     <div class="faq">
       <details>
         <summary>PetPill 免费吗？</summary>
-        <div class="answer"><p>是的。免费版可以记录一只宠物、一种药物和一次兽医预约，并包含提醒、给药记录和 Apple Watch App。PetPill Pro 解锁其他一切功能，可按月、按年或一次买断。年度方案为新订阅者提供 7 天免费试用。</p></div>
-      </details>
-      <details>
-        <summary>适合哪些宠物？</summary>
-        <div class="answer"><p>狗、猫、兔子、仓鼠、鸟、鱼、乌龟，以及你输入的任何其他宠物。使用 Pro，养多少只都能添加。</p></div>
-      </details>
-      <details>
-        <summary>我的伴侣能用 PetPill 照顾同一只宠物吗？</summary>
-        <div class="answer"><p>可以。和伴侣或任何同住的人共享宠物，你们会看到同一份日程，以及每一剂是谁给的。邀请需要 PetPill Pro，加入免费。Pro 订阅也适用于你的家人共享群组。</p><p><a href="household/">家庭共享的运作方式</a></p></div>
+        <div class="answer"><p>可以。和伴侣或任何同住的人共享宠物，你们会看到同一份日程，以及每一剂是谁给的。邀请需要 PetPill Pro，加入免费。Pro 订阅也适用于你的家人共享群组。群组之外，它仍覆盖你们共享的宠物：喂食、护理事项、体重、如厕、呼吸和验血。</p><p><a href="household/">家庭共享的运作方式</a></p></div>
       </details>
       <details>
         <summary>记录给药一定要打开 App 吗？</summary>

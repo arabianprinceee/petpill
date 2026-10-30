@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PetPill：ペットのお薬リマインダー</title>
-<meta name="description" content="PetPillは、ペットのお薬の時間をお知らせし、毎日のお世話をひとつのアプリにまとめます。投与、ごはん、お世話、通院、体重、そして獣医レポートまで。家族みんなで共有できます。">
+<meta name="description" content="PetPillは、ペットのお薬の時間をお知らせし、毎日のお世話をひとつのアプリにまとめます。投与、ごはん、お世話、通院、体重、血液検査、そして獣医レポートまで。家族みんなで共有できます。">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../favicon-32.png" sizes="32x32">
@@ -68,7 +68,7 @@
       "name": "パートナーも同じペットにPetPillを使えますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "はい。パートナーや一緒に暮らす人とペットを共有すれば、同じスケジュールと、だれが投与したかを全員で見られます。招待にはPetPill Proが必要ですが、参加は無料です。Proのサブスクリプションはファミリー共有グループにも適用されます。 世帯での共有のしくみ"
+        "text": "はい。パートナーや一緒に暮らす人とペットを共有すれば、同じスケジュールと、だれが投与したかを全員で見られます。招待にはPetPill Proが必要ですが、参加は無料です。Proのサブスクリプションはファミリー共有グループにも適用されます。グループ外の人も、共有しているペットのごはん、お世話、体重、トイレ、呼吸、血液検査はあなたのProで使えます。 世帯での共有のしくみ"
       }
     },
     {
@@ -345,13 +345,51 @@
   </div>
 </section>
 
+<!-- Blood tests -->
+<section class="section">
+  <div class="wrap split flip">
+    <div class="split-copy">
+      <span class="eyebrow">🩸 血液検査</span>
+      <h2 class="h2">検査結果は、<span class="accent">自動で読み取り。</span></h2>
+      <p class="lead">PDFや写真で追加するか、用紙をスキャン。PetPillが値を読み取り、確認が必要なのは読み取りに迷った値だけです。</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>どの値も、検査機関の基準範囲とあわせてグラフに</li>
+        <li>お薬を始めた日や量を変えた日と並べて表示</li>
+        <li>読み取りはサーバーではなく、あなたのiPhoneで</li>
+      </ul>
+      <a class="more" href="health-record/#blood-tests">血液検査のしくみ</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="bt-card">
+        <div class="bt-head">
+          <div><b>T4</b><span>ルル · サイロキシン</span></div>
+          <div class="bt-now"><b>2.9 <small>µg/dL</small></b><span>基準範囲 0.8–4.7</span></div>
+        </div>
+        <svg viewBox="0 0 320 150">
+          <rect x="0" y="67" width="320" height="52" rx="4" fill="#2fb45a" opacity=".14"/>
+          <line x1="0" y1="135" x2="320" y2="135" stroke="#e3e6ee" stroke-width="1.5"/>
+          <line x1="92" y1="16" x2="92" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <line x1="160" y1="16" x2="160" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <text x="88" y="11" text-anchor="end">開始</text>
+          <text x="164" y="11">用量変更</text>
+          <polyline points="16,39.4 74,31.4 125,55.4 192,78.0 251,88.7 293,91.3" fill="none" stroke="#456af7" stroke-width="2.4" stroke-linejoin="round" opacity=".5"/>
+          <circle cx="16" cy="39.4" r="5" fill="#ef8a00"/><circle cx="74" cy="31.4" r="5" fill="#ef8a00"/><circle cx="125" cy="55.4" r="5" fill="#ef8a00"/><circle cx="192" cy="78.0" r="5" fill="#456af7"/><circle cx="251" cy="88.7" r="5" fill="#456af7"/><circle cx="293" cy="91.3" r="5" fill="#456af7"/>
+          <text class="axis" x="14" y="149">3月</text><text class="axis" x="87" y="149">5月</text><text class="axis" x="160" y="149">7月</text><text class="axis" x="234" y="149">9月</text>
+        </svg>
+        <p class="bt-legend">点線：チアマゾール</p>
+      </div>
+      <img class="stage-pet float slow" src="../assets/img/kitten-sit.webp" alt="" style="width:112px;left:-26px;top:-128px">
+    </div>
+  </div>
+</section>
+
 <!-- Vet report -->
 <section class="section white">
   <div class="wrap split">
     <div class="split-copy">
       <span class="eyebrow">📄 獣医レポート</span>
       <h2 class="h2">すべての記録を<span class="accent">1枚に。</span></h2>
-      <p class="lead">ペットの記録の好きな期間をPDFに。服薬遵守率つきの投与、通院、体重、呼吸数、食欲、トイレの記録。</p>
+      <p class="lead">ペットの記録の好きな期間を、アレルギーから始まるPDFに。服薬遵守率つきの投与、血液検査、通院、体重、呼吸数、食欲、トイレの記録。</p>
       <ul class="ticks" style="margin-bottom:26px">
         <li>プレビューして、メール、メッセージ、AirDropで送信</li>
         <li>正直な数字：記録の空白は、空白のまま表示</li>
@@ -446,7 +484,7 @@
           <li>ごはんとお世話、リマインダー付き</li>
           <li>ホーム画面とロック画面のウィジェット</li>
           <li>補充のリマインダー</li>
-          <li>体重、トイレの記録、呼吸数</li>
+          <li>体重、トイレの記録、呼吸数、血液検査</li>
           <li>獣医レポート</li>
         </ul>
         <img class="plan-pet" src="../assets/img/puppy-stand.webp" alt="" aria-hidden="true">
@@ -463,15 +501,7 @@
     <div class="faq">
       <details>
         <summary>PetPillは無料ですか？</summary>
-        <div class="answer"><p>はい。無料版では、ペット1匹、お薬1つ、通院1件を、リマインダー、投与の履歴、Apple Watchアプリと一緒に使えます。PetPill Proでそれ以外のすべてが使えるようになります。月額、年額、または買い切りで。年額プランは、初めての方なら7日間無料から始まります。</p></div>
-      </details>
-      <details>
-        <summary>どんなペットに使えますか？</summary>
-        <div class="answer"><p>犬、猫、うさぎ、ハムスター、鳥、魚、亀、そして入力すればどんなペットにも。Proなら何匹でも追加できます。</p></div>
-      </details>
-      <details>
-        <summary>パートナーも同じペットにPetPillを使えますか？</summary>
-        <div class="answer"><p>はい。パートナーや一緒に暮らす人とペットを共有すれば、同じスケジュールと、だれが投与したかを全員で見られます。招待にはPetPill Proが必要ですが、参加は無料です。Proのサブスクリプションはファミリー共有グループにも適用されます。</p><p><a href="household/">世帯での共有のしくみ</a></p></div>
+        <div class="answer"><p>はい。パートナーや一緒に暮らす人とペットを共有すれば、同じスケジュールと、だれが投与したかを全員で見られます。招待にはPetPill Proが必要ですが、参加は無料です。Proのサブスクリプションはファミリー共有グループにも適用されます。グループ外の人も、共有しているペットのごはん、お世話、体重、トイレ、呼吸、血液検査はあなたのProで使えます。</p><p><a href="household/">世帯での共有のしくみ</a></p></div>
       </details>
       <details>
         <summary>投与を記録するのにアプリを開く必要はありますか？</summary>

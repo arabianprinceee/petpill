@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Le carnet de santé de votre animal&nbsp;: doses, repas, poids et plus | PetPill</title>
-<meta name="description" content="Enregistrez doses, repas, pesées, passages aux toilettes, fréquence respiratoire, tâches et visites vétérinaires d’un geste. PetPill réunit tout le carnet de santé de votre animal au même endroit.">
+<meta name="description" content="Enregistrez doses, repas, pesées, passages aux toilettes, fréquence respiratoire, tâches et visites vétérinaires d’un geste, et ajoutez les prises de sang depuis le compte rendu du labo. PetPill réunit tout le carnet de santé de votre animal au même endroit.">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../../favicon-32.png" sizes="32x32">
@@ -24,7 +24,7 @@
 <meta property="og:url" content="https://petpillapp.com/fr/health-record/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tout le carnet de santé de votre animal | PetPill">
-<meta property="og:description" content="Doses, repas, poids, passages aux toilettes, fréquence respiratoire, tâches et visites vétérinaires, enregistrés d’un geste.">
+<meta property="og:description" content="Doses, repas, poids, passages aux toilettes, fréquence respiratoire, prises de sang, tâches et visites vétérinaires, au même endroit.">
 <meta property="og:image" content="https://petpillapp.com/assets/img/og.png">
 <link rel="stylesheet" href="../../assets/css/site.css">
 <script src="../../assets/js/count.js" defer></script>
@@ -86,7 +86,7 @@
     <div class="hero-copy">
       <span class="eyebrow">Carnet de santé</span>
       <h1 class="display"><span class="box">Tout son</span><span class="line">carnet de santé</span></h1>
-      <p class="lead">Doses, repas, pesées, passages aux toilettes, fréquence respiratoire, tâches et visites vétérinaires. Enregistrés d’un geste, réunis au même endroit, prêts quand le vétérinaire demande.</p>
+      <p class="lead">Doses, repas, pesées, passages aux toilettes, fréquence respiratoire, prises de sang, tâches et visites vétérinaires. Enregistrés d’un geste, réunis au même endroit, prêts quand le vétérinaire demande.</p>
       <div class="cta-row">
         <a class="badge-link" href="https://apps.apple.com/app/id6760020801"><img src="../../assets/badges/app-store-black-fr.svg" alt="Télécharger dans l’App Store" width="162" height="54"></a>
         <span class="cta-note">Téléchargement gratuit. Essayez Pro gratuitement pendant 7&nbsp;jours.</span>
@@ -268,6 +268,52 @@
   </div>
 </section>
 
+<!-- Blood tests -->
+<section class="section" id="blood-tests">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">🩸 Prises de sang <span class="pro-chip">PRO</span></span>
+      <h2 class="h2">Les résultats du labo, <span class="accent">en graphique.</span></h2>
+      <p class="lead">Ajoutez le compte rendu du labo de votre animal en PDF, en photo ou scanné. PetPill lit les valeurs, et vous vérifiez seulement celles dont il n’est pas sûr avant tout enregistrement.</p>
+      <ul class="ticks" style="margin-bottom:22px">
+        <li>Chaque valeur sur un graphique, face à l’intervalle de son labo</li>
+        <li>Des lignes là où un traitement choisi a commencé ou changé de dose, pour voir ce qui a bougé ensuite</li>
+        <li>Épinglez jusqu’à trois valeurs sur la page de votre animal, et planifiez la prochaine prise de sang avec un rappel</li>
+        <li>Chaque résultat dans le rapport vétérinaire</li>
+      </ul>
+      <p class="small">Lu sur votre iPhone, pas sur un serveur. Les comptes rendus en anglais sont les mieux lus&nbsp;; dans une autre langue, vérifiez chaque valeur sur le papier.</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="bt-check">
+        <div class="bt-check-head"><b>VGM</b><span class="bt-flag">1 à vérifier</span></div>
+        <div class="bt-line"><span>VGM</span><mark>74,1 H</mark><span>fL</span><span>61,6–73,5</span></div>
+        <p class="bt-read">Lu&nbsp;: <b>74,1 fL</b> · intervalle 61,6–73,5 · marqué H</p>
+        <div class="bt-answers"><span class="ok">C’est juste</span><span>Corriger</span></div>
+      </div>
+      <div style="height:22px"></div>
+      <div class="bt-card">
+        <div class="bt-head">
+          <div><b>T4</b><span>Lulu · Thyroxine</span></div>
+          <div class="bt-now"><b>2,9 <small>µg/dL</small></b><span>intervalle du labo 0,8–4,7</span></div>
+        </div>
+        <svg viewBox="0 0 320 150">
+          <rect x="0" y="67" width="320" height="52" rx="4" fill="#2fb45a" opacity=".14"/>
+          <line x1="0" y1="135" x2="320" y2="135" stroke="#e3e6ee" stroke-width="1.5"/>
+          <line x1="92" y1="16" x2="92" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <line x1="160" y1="16" x2="160" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <text x="88" y="11" text-anchor="end">Début</text>
+          <text x="164" y="11">Dose modifiée</text>
+          <polyline points="16,39.4 74,31.4 125,55.4 192,78.0 251,88.7 293,91.3" fill="none" stroke="#456af7" stroke-width="2.4" stroke-linejoin="round" opacity=".5"/>
+          <circle cx="16" cy="39.4" r="5" fill="#ef8a00"/><circle cx="74" cy="31.4" r="5" fill="#ef8a00"/><circle cx="125" cy="55.4" r="5" fill="#ef8a00"/><circle cx="192" cy="78.0" r="5" fill="#456af7"/><circle cx="251" cy="88.7" r="5" fill="#456af7"/><circle cx="293" cy="91.3" r="5" fill="#456af7"/>
+          <text class="axis" x="14" y="149">mars</text><text class="axis" x="87" y="149">mai</text><text class="axis" x="160" y="149">juil.</text><text class="axis" x="234" y="149">sept.</text>
+        </svg>
+        <p class="bt-legend">Lignes pointillées&nbsp;: Thiamazole</p>
+      </div>
+      <img class="stage-pet float" src="../../assets/img/kitten-play.webp" alt="" style="width:124px;right:-26px;top:-120px">
+    </div>
+  </div>
+</section>
+
 <!-- Chores, visits, ID -->
 <section class="section white">
   <div class="wrap">
@@ -290,7 +336,7 @@
       <div class="card">
         <div class="tile">🪪</div>
         <h3>Carte d’identité de l’animal</h3>
-        <p>Le numéro de puce, copié d’un geste. L’anniversaire, avec un compte à rebours et des confettis le jour J. Des notes pour ceux qui s’en occupent.</p>
+        <p>Allergies, maladies, race et puce, avec les numéros du vétérinaire, des urgences et de l’assurance à portée de doigt. Partagée avec tout le foyer.</p>
       </div>
       <div class="card">
         <div class="tile">🗂️</div>

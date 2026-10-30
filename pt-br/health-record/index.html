@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>O histórico de saúde do seu pet: doses, refeições, peso e mais | PetPill</title>
-<meta name="description" content="Registre doses, refeições, pesagens, idas ao banheiro, frequência respiratória, tarefas e consultas com um toque. O PetPill guarda todo o histórico de saúde do seu pet em um só lugar.">
+<meta name="description" content="Registre doses, refeições, pesagens, idas ao banheiro, frequência respiratória, tarefas e consultas com um toque, e adicione exames de sangue a partir do laudo do laboratório. O PetPill guarda todo o histórico de saúde do seu pet em um só lugar.">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../../favicon-32.png" sizes="32x32">
@@ -24,7 +24,7 @@
 <meta property="og:url" content="https://petpillapp.com/pt-br/health-record/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Todo o histórico de saúde do seu pet | PetPill">
-<meta property="og:description" content="Doses, refeições, peso, idas ao banheiro, frequência respiratória, tarefas e consultas, registrados com um toque.">
+<meta property="og:description" content="Doses, refeições, peso, idas ao banheiro, frequência respiratória, exames de sangue, tarefas e consultas, em um só lugar.">
 <meta property="og:image" content="https://petpillapp.com/assets/img/og.png">
 <link rel="stylesheet" href="../../assets/css/site.css">
 <script src="../../assets/js/count.js" defer></script>
@@ -86,7 +86,7 @@
     <div class="hero-copy">
       <span class="eyebrow">Histórico de saúde</span>
       <h1 class="display"><span class="box">Todo o</span><span class="line">histórico de saúde</span></h1>
-      <p class="lead">Doses, refeições, pesagens, idas ao banheiro, frequência respiratória, tarefas e consultas. Registrados com um toque, guardados em um lugar, prontos quando o veterinário perguntar.</p>
+      <p class="lead">Doses, refeições, pesagens, idas ao banheiro, frequência respiratória, exames de sangue, tarefas e consultas. Registrados com um toque, guardados em um lugar, prontos quando o veterinário perguntar.</p>
       <div class="cta-row">
         <a class="badge-link" href="https://apps.apple.com/app/id6760020801"><img src="../../assets/badges/app-store-black-pt-br.svg" alt="Baixar na App Store" width="162" height="54"></a>
         <span class="cta-note">Baixe grátis. Teste o Pro grátis por 7 dias.</span>
@@ -268,6 +268,52 @@
   </div>
 </section>
 
+<!-- Blood tests -->
+<section class="section" id="blood-tests">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">🩸 Exames de sangue <span class="pro-chip">PRO</span></span>
+      <h2 class="h2">Os resultados do laboratório, <span class="accent">em gráfico.</span></h2>
+      <p class="lead">Adicione o laudo do laboratório do seu pet em PDF, em foto ou escaneado. O PetPill lê os valores, e você só confere aqueles em que ele ficou em dúvida, antes de salvar qualquer coisa.</p>
+      <ul class="ticks" style="margin-bottom:22px">
+        <li>Cada valor num gráfico, com a faixa do próprio laboratório</li>
+        <li>Linhas onde um remédio que você escolher começou ou mudou de dose, para ver o que mudou depois</li>
+        <li>Fixe até três valores na página do seu pet e agende o próximo exame com um lembrete</li>
+        <li>Cada resultado no relatório veterinário</li>
+      </ul>
+      <p class="small">Lido no seu iPhone, não num servidor. Laudos em inglês são lidos melhor; em outro idioma, confira cada valor no papel.</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="bt-check">
+        <div class="bt-check-head"><b>VCM</b><span class="bt-flag">1 para conferir</span></div>
+        <div class="bt-line"><span>VCM</span><mark>74,1 H</mark><span>fL</span><span>61,6–73,5</span></div>
+        <p class="bt-read">Lido: <b>74,1 fL</b> · faixa 61,6–73,5 · marcado H</p>
+        <div class="bt-answers"><span class="ok">Está certo</span><span>Corrigir</span></div>
+      </div>
+      <div style="height:22px"></div>
+      <div class="bt-card">
+        <div class="bt-head">
+          <div><b>T4</b><span>Lulu · Tiroxina</span></div>
+          <div class="bt-now"><b>2,9 <small>µg/dL</small></b><span>faixa do laboratório 0,8–4,7</span></div>
+        </div>
+        <svg viewBox="0 0 320 150">
+          <rect x="0" y="67" width="320" height="52" rx="4" fill="#2fb45a" opacity=".14"/>
+          <line x1="0" y1="135" x2="320" y2="135" stroke="#e3e6ee" stroke-width="1.5"/>
+          <line x1="92" y1="16" x2="92" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <line x1="160" y1="16" x2="160" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <text x="88" y="11" text-anchor="end">Início</text>
+          <text x="164" y="11">Dose alterada</text>
+          <polyline points="16,39.4 74,31.4 125,55.4 192,78.0 251,88.7 293,91.3" fill="none" stroke="#456af7" stroke-width="2.4" stroke-linejoin="round" opacity=".5"/>
+          <circle cx="16" cy="39.4" r="5" fill="#ef8a00"/><circle cx="74" cy="31.4" r="5" fill="#ef8a00"/><circle cx="125" cy="55.4" r="5" fill="#ef8a00"/><circle cx="192" cy="78.0" r="5" fill="#456af7"/><circle cx="251" cy="88.7" r="5" fill="#456af7"/><circle cx="293" cy="91.3" r="5" fill="#456af7"/>
+          <text class="axis" x="14" y="149">mar.</text><text class="axis" x="87" y="149">mai.</text><text class="axis" x="160" y="149">jul.</text><text class="axis" x="234" y="149">set.</text>
+        </svg>
+        <p class="bt-legend">Linhas tracejadas: Metimazol</p>
+      </div>
+      <img class="stage-pet float" src="../../assets/img/kitten-play.webp" alt="" style="width:124px;right:-26px;top:-120px">
+    </div>
+  </div>
+</section>
+
 <!-- Chores, visits, ID -->
 <section class="section white">
   <div class="wrap">
@@ -290,7 +336,7 @@
       <div class="card">
         <div class="tile">🪪</div>
         <h3>Carteirinha do pet</h3>
-        <p>O número do microchip, copiado com um toque. O aniversário, com contagem regressiva e confete no dia. Anotações para quem cuida dele.</p>
+        <p>Alergias, doenças, raça e microchip, com os telefones do veterinário, do plantão e do seguro a um toque. Compartilhada com todos da casa.</p>
       </div>
       <div class="card">
         <div class="tile">🗂️</div>

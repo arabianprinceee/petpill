@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ペットの健康記録：投与、ごはん、体重など | PetPill</title>
-<meta name="description" content="投与、ごはん、体重測定、トイレ、呼吸数、お世話、通院をワンタップで記録。PetPillがペットの健康記録をひとつにまとめます。">
+<meta name="description" content="投与、ごはん、体重測定、トイレ、呼吸数、お世話、通院をワンタップで記録。血液検査は検査結果から追加できます。PetPillがペットの健康記録をひとつにまとめます。">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../../favicon-32.png" sizes="32x32">
@@ -24,7 +24,7 @@
 <meta property="og:url" content="https://petpillapp.com/ja/health-record/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ペットの健康記録をまるごと | PetPill">
-<meta property="og:description" content="投与、ごはん、体重、トイレ、呼吸数、お世話、通院をワンタップで記録。">
+<meta property="og:description" content="投与、ごはん、体重、トイレ、呼吸数、血液検査、お世話、通院をひとつに。">
 <meta property="og:image" content="https://petpillapp.com/assets/img/og.png">
 <link rel="stylesheet" href="../../assets/css/site.css">
 <script src="../../assets/js/count.js" defer></script>
@@ -86,7 +86,7 @@
     <div class="hero-copy">
       <span class="eyebrow">健康記録</span>
       <h1 class="display"><span class="box">健康記録を</span><span class="line">まるごと</span></h1>
-      <p class="lead">投与、ごはん、体重測定、トイレ、呼吸数、お世話、通院。ワンタップで記録して、ひとつにまとめて、獣医さんに聞かれたらすぐ見せられます。</p>
+      <p class="lead">投与、ごはん、体重測定、トイレ、呼吸数、血液検査、お世話、通院。ワンタップで記録して、ひとつにまとめて、獣医さんに聞かれたらすぐ見せられます。</p>
       <div class="cta-row">
         <a class="badge-link" href="https://apps.apple.com/app/id6760020801"><img src="../../assets/badges/app-store-black-ja.svg" alt="App Storeからダウンロード" width="162" height="54"></a>
         <span class="cta-note">無料でダウンロード。Proを7日間無料でお試し。</span>
@@ -268,6 +268,52 @@
   </div>
 </section>
 
+<!-- Blood tests -->
+<section class="section" id="blood-tests">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">🩸 血液検査 <span class="pro-chip">PRO</span></span>
+      <h2 class="h2">検査結果を、<span class="accent">グラフで。</span></h2>
+      <p class="lead">ペットの検査結果をPDFや写真で追加するか、用紙をスキャン。PetPillが値を読み取り、保存する前に確認が必要なのは読み取りに迷った値だけです。</p>
+      <ul class="ticks" style="margin-bottom:22px">
+        <li>どの値も、検査機関の基準範囲とあわせてグラフに</li>
+        <li>選んだお薬を始めた日や量を変えた日に線を引くので、その後に何が変わったかが分かります</li>
+        <li>大切な値は3つまでペットのページにピン留め。次の検査はリマインダー付きで予約</li>
+        <li>すべての結果は獣医レポートにも</li>
+      </ul>
+      <p class="small">読み取りはサーバーではなく、あなたのiPhoneで。英語の検査結果がいちばん正確に読めます。ほかの言語では、値をひとつずつ用紙と照らし合わせてください。</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="bt-check">
+        <div class="bt-check-head"><b>MCV</b><span class="bt-flag">確認が必要 1</span></div>
+        <div class="bt-line"><span>MCV</span><mark>74.1 H</mark><span>fL</span><span>61.6–73.5</span></div>
+        <p class="bt-read">読み取り値：<b>74.1 fL</b> · 基準範囲 61.6–73.5 · Hマーク</p>
+        <div class="bt-answers"><span class="ok">正しい</span><span>修正</span></div>
+      </div>
+      <div style="height:22px"></div>
+      <div class="bt-card">
+        <div class="bt-head">
+          <div><b>T4</b><span>ルル · サイロキシン</span></div>
+          <div class="bt-now"><b>2.9 <small>µg/dL</small></b><span>基準範囲 0.8–4.7</span></div>
+        </div>
+        <svg viewBox="0 0 320 150">
+          <rect x="0" y="67" width="320" height="52" rx="4" fill="#2fb45a" opacity=".14"/>
+          <line x1="0" y1="135" x2="320" y2="135" stroke="#e3e6ee" stroke-width="1.5"/>
+          <line x1="92" y1="16" x2="92" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <line x1="160" y1="16" x2="160" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <text x="88" y="11" text-anchor="end">開始</text>
+          <text x="164" y="11">用量変更</text>
+          <polyline points="16,39.4 74,31.4 125,55.4 192,78.0 251,88.7 293,91.3" fill="none" stroke="#456af7" stroke-width="2.4" stroke-linejoin="round" opacity=".5"/>
+          <circle cx="16" cy="39.4" r="5" fill="#ef8a00"/><circle cx="74" cy="31.4" r="5" fill="#ef8a00"/><circle cx="125" cy="55.4" r="5" fill="#ef8a00"/><circle cx="192" cy="78.0" r="5" fill="#456af7"/><circle cx="251" cy="88.7" r="5" fill="#456af7"/><circle cx="293" cy="91.3" r="5" fill="#456af7"/>
+          <text class="axis" x="14" y="149">3月</text><text class="axis" x="87" y="149">5月</text><text class="axis" x="160" y="149">7月</text><text class="axis" x="234" y="149">9月</text>
+        </svg>
+        <p class="bt-legend">点線：チアマゾール</p>
+      </div>
+      <img class="stage-pet float" src="../../assets/img/kitten-play.webp" alt="" style="width:124px;right:-26px;top:-120px">
+    </div>
+  </div>
+</section>
+
 <!-- Chores, visits, ID -->
 <section class="section white">
   <div class="wrap">
@@ -290,7 +336,7 @@
       <div class="card">
         <div class="tile">🪪</div>
         <h3>ペットのIDカード</h3>
-        <p>マイクロチップ番号はワンタップでコピー。誕生日はカウントダウン付きで、当日には紙吹雪。お世話する人へのメモも。</p>
+        <p>アレルギー、持病、品種、マイクロチップ。かかりつけ医、夜間・救急、ペット保険の電話番号もワンタップで。家族みんなと共有されます。</p>
       </div>
       <div class="card">
         <div class="tile">🗂️</div>

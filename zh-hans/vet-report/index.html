@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>兽医报告：把宠物档案生成 PDF | PetPill</title>
-<meta name="description" content="把宠物档案中任意一段时间生成给兽医的 PDF：用药与依从性、兽医预约、体重、静息呼吸频率、食欲和如厕记录。">
+<meta name="description" content="把宠物档案中任意一段时间生成给兽医的 PDF，以过敏信息开头：用药与依从性、验血、兽医预约、体重、静息呼吸频率、食欲和如厕记录。">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../../favicon-32.png" sizes="32x32">
@@ -90,6 +90,7 @@
       <div class="hero-stack" style="padding-bottom:210px">
         <div class="pdf">
           <header><div><b>洛基</b><span>狗 · 7 岁</span></div><div style="text-align:right"><span>兽医报告</span><span>9月1日–30日</span></div></header>
+          <div class="allergy"><b>过敏</b>鸡肉</div>
           <h4>依从性</h4>
           <table>
             <tr><th>药物</th><th class="num">已给</th><th class="num">跳过</th><th class="num">错过</th><th class="num">比率</th></tr>
@@ -117,11 +118,13 @@
       <p class="lead">选择一只宠物和时间段：最近 7 天或 30 天、3 个月、本月、全部，或任意日期。不需要的部分可以关闭。</p>
     </div>
     <div class="cards">
+      <div class="card"><div class="tile">🪪</div><h3>宠物信息</h3><p>第一页从宠物本身开始：名字下方框出过敏信息，然后是品种、性别、体重、芯片号码、疾病、疫苗、兽医和宠物保险。</p></div>
       <div class="card"><div class="tile">💊</div><h3>药物与用药计划</h3><p>时间段内的每种药物，及其剂量和计划。</p></div>
       <div class="card"><div class="tile">✅</div><h3>依从性</h3><p>已给、跳过和错过的剂量，以及每种药物的比率。</p></div>
       <div class="card"><div class="tile">🏥</div><h3>兽医预约</h3><p>时间段内的每次预约，及就诊后写的备注。</p></div>
       <div class="card"><div class="tile">⚖️</div><h3>体重</h3><p>每次称重都有图表和表格，以及前后的变化。</p></div>
       <div class="card"><div class="tile">🫁</div><h3>静息呼吸频率</h3><p>与你的阈值对比的图表，以及在每次剂量调整处分段的表格，看看上次调整是否有效。</p></div>
+      <div class="card"><div class="tile">🩸</div><h3>验血</h3><p>你固定的数值在最近六份化验单中的结果，带有实验室标注的 H 和 L，以及用药变化的日期。</p></div>
       <div class="card"><div class="tile">🍽️</div><h3>食欲与如厕记录</h3><p>每周吃了多少，以及你记录的小便和大便。</p></div>
     </div>
   </div>
@@ -185,7 +188,7 @@
   <div class="wrap">
     <div class="pages-strip">
       <a href="../household/"><b>家庭</b><span>和全家共享宠物。</span></a>
-      <a href="../health-record/"><b>健康档案</b><span>喂食、体重、如厕、呼吸、护理事项和兽医预约。</span></a>
+      <a href="../health-record/"><b>健康档案</b><span>喂食、体重、如厕、呼吸、验血、护理事项和兽医预约。</span></a>
       <a href="../widgets/"><b>小组件与 Watch</b><span>不用打开 App 也能记录。</span></a>
       <a href="../support/"><b>支持</b><span>常见解答和联系方式。</span></a>
     </div>

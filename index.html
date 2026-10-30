@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PetPill: Pet Medication Reminders for iPhone</title>
-<meta name="description" content="PetPill reminds you when your pet's medication is due and keeps their whole routine in one app: doses, meals, chores, vet visits, weight and a vet report. Share it with everyone at home.">
+<meta name="description" content="PetPill reminds you when your pet's medication is due and keeps their whole routine in one app: doses, meals, chores, vet visits, weight, blood tests and a vet report. Share it with everyone at home.">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="favicon-32.png" sizes="32x32">
@@ -68,7 +68,7 @@
       "name": "Can my partner use PetPill for the same pet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Share a pet with your partner or anyone you live with, and you both see the same schedule and who gave each dose. Inviting needs PetPill Pro; joining is free. A Pro subscription also covers your Apple Family Sharing group. How household sharing works"
+        "text": "Yes. Share a pet with your partner or anyone you live with, and you both see the same schedule and who gave each dose. Inviting needs PetPill Pro; joining is free. A Pro subscription also covers your Apple Family Sharing group. Outside the group, it still covers the pets you share: their meals, chores, weight, toilet log, breathing rate and blood tests. How household sharing works"
       }
     },
     {
@@ -349,13 +349,51 @@
   </div>
 </section>
 
+<!-- Blood tests -->
+<section class="section">
+  <div class="wrap split flip">
+    <div class="split-copy">
+      <span class="eyebrow">🩸 Blood tests</span>
+      <h2 class="h2">The lab report, <span class="accent">read for you.</span></h2>
+      <p class="lead">Add it as a PDF, a photo or a scan of the paper. PetPill reads the values, and you check only the ones it isn't sure of.</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>Each value charted against the lab's own range</li>
+        <li>Next to the day a medicine started or its dose changed</li>
+        <li>Read on your iPhone, not on a server</li>
+      </ul>
+      <a class="more" href="health-record/#blood-tests">How blood tests work</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="bt-card">
+        <div class="bt-head">
+          <div><b>T4</b><span>Lulu · Thyroxine</span></div>
+          <div class="bt-now"><b>2.9 <small>µg/dL</small></b><span>lab range 0.8–4.7</span></div>
+        </div>
+        <svg viewBox="0 0 320 150">
+          <rect x="0" y="67" width="320" height="52" rx="4" fill="#2fb45a" opacity=".14"/>
+          <line x1="0" y1="135" x2="320" y2="135" stroke="#e3e6ee" stroke-width="1.5"/>
+          <line x1="92" y1="16" x2="92" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <line x1="160" y1="16" x2="160" y2="135" stroke="#8a90a0" stroke-dasharray="5 4" stroke-width="1.6"/>
+          <text x="88" y="11" text-anchor="end">Started</text>
+          <text x="164" y="11">Dose changed</text>
+          <polyline points="16,39.4 74,31.4 125,55.4 192,78.0 251,88.7 293,91.3" fill="none" stroke="#456af7" stroke-width="2.4" stroke-linejoin="round" opacity=".5"/>
+          <circle cx="16" cy="39.4" r="5" fill="#ef8a00"/><circle cx="74" cy="31.4" r="5" fill="#ef8a00"/><circle cx="125" cy="55.4" r="5" fill="#ef8a00"/><circle cx="192" cy="78.0" r="5" fill="#456af7"/><circle cx="251" cy="88.7" r="5" fill="#456af7"/><circle cx="293" cy="91.3" r="5" fill="#456af7"/>
+          <text class="axis" x="14" y="149">Mar</text><text class="axis" x="87" y="149">May</text><text class="axis" x="160" y="149">Jul</text><text class="axis" x="234" y="149">Sep</text>
+        </svg>
+        <p class="bt-legend">Dashed lines: Methimazole</p>
+      </div>
+      <img class="stage-pet float slow" src="assets/img/kitten-sit.webp" alt="" style="width:112px;left:-26px;top:-128px">
+    </div>
+  </div>
+</section>
+
 <!-- Vet report -->
 <section class="section white">
   <div class="wrap split">
     <div class="split-copy">
       <span class="eyebrow">📄 Vet report</span>
       <h2 class="h2">The whole story, <span class="accent">on one page.</span></h2>
-      <p class="lead">Turn any period of your pet's record into a PDF: doses with an adherence rate, vet visits, weight, breathing rate, appetite and toilet visits.</p>
+      <p class="lead">Turn any period of your pet's record into a PDF that opens on their allergies: doses with an adherence rate, blood tests, vet visits, weight, breathing rate, appetite and toilet visits.</p>
       <ul class="ticks" style="margin-bottom:26px">
         <li>Preview it, then send it by Mail, Messages or AirDrop</li>
         <li>Honest numbers: a gap in the record is shown as a gap</li>
@@ -450,7 +488,7 @@
           <li>Meals and chores, with reminders</li>
           <li>Home Screen and Lock Screen widgets</li>
           <li>Refill reminders</li>
-          <li>Weight, toilet log and breathing rate</li>
+          <li>Weight, toilet log, breathing rate and blood tests</li>
           <li>The vet report</li>
         </ul>
         <img class="plan-pet" src="assets/img/puppy-stand.webp" alt="" aria-hidden="true">
@@ -467,15 +505,7 @@
     <div class="faq">
       <details>
         <summary>Is PetPill free?</summary>
-        <div class="answer"><p>Yes. The free version covers one pet, one medication and one vet visit, with reminders, dose history and the Apple Watch app. PetPill Pro unlocks everything else, monthly, yearly or once for life. The yearly plan starts with a 7-day free trial for new subscribers.</p></div>
-      </details>
-      <details>
-        <summary>Which pets does it work for?</summary>
-        <div class="answer"><p>Dogs, cats, rabbits, hamsters, birds, fish, turtles, and any other pet you type in. With Pro you can add as many as you have.</p></div>
-      </details>
-      <details>
-        <summary>Can my partner use PetPill for the same pet?</summary>
-        <div class="answer"><p>Yes. Share a pet with your partner or anyone you live with, and you both see the same schedule and who gave each dose. Inviting needs PetPill Pro; joining is free. A Pro subscription also covers your Apple Family Sharing group.</p><p><a href="household/">How household sharing works</a></p></div>
+        <div class="answer"><p>Yes. Share a pet with your partner or anyone you live with, and you both see the same schedule and who gave each dose. Inviting needs PetPill Pro; joining is free. A Pro subscription also covers your Apple Family Sharing group. Outside the group, it still covers the pets you share: their meals, chores, weight, toilet log, breathing rate and blood tests.</p><p><a href="household/">How household sharing works</a></p></div>
       </details>
       <details>
         <summary>Do I have to open the app to log a dose?</summary>
