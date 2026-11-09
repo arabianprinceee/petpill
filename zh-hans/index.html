@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PetPill：宠物用药提醒</title>
-<meta name="description" content="PetPill 会在宠物该吃药时提醒你，并把它的日常照护集中在一个 App 里：给药、喂食、护理事项、看兽医、体重、验血，还有兽医报告。和家里每个人一起共享。">
+<meta name="description" content="PetPill 会在宠物该吃药时提醒你，并把它的日常照护集中在一个 App 里：给药、喂食、护理事项、看兽医、日记、如厕训练、体重、验血，还有兽医报告。和家里每个人一起共享。">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../favicon-32.png" sizes="32x32">
@@ -68,7 +68,7 @@
       "name": "我的伴侣能用 PetPill 照顾同一只宠物吗？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "可以。和伴侣或任何同住的人共享宠物，你们会看到同一份日程，以及每一剂是谁给的。邀请需要 PetPill Pro，加入免费。Pro 订阅也适用于你的家人共享群组。群组之外，它仍覆盖你们共享的宠物：喂食、护理事项、体重、如厕、呼吸和验血。 家庭共享的运作方式"
+        "text": "可以。和伴侣或任何同住的人共享宠物，你们会看到同一份日程，以及每一剂是谁给的。邀请需要 PetPill Pro，加入免费。Pro 订阅也适用于你的家人共享群组。群组之外，它仍覆盖你们共享的宠物：喂食、护理事项、日记、心情、体重、如厕、如厕训练、呼吸和验血。"
       }
     },
     {
@@ -100,7 +100,7 @@
       "name": "支持哪些设备和语言？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "iOS 17.6 或更高版本的 iPhone 和 iPad，以及 Apple Watch。PetPill 支持简体中文、英文、德文、法文、西班牙文、意大利文、葡萄牙文、俄文、日文和韩文。没有 Android 版本。"
+        "text": "iOS 17.6 或更高版本的 iPhone 和 iPad，以及 Apple Watch。在 iPhone Duo 上，无论折叠还是展开，都会占满整个屏幕。PetPill 支持简体中文、英文、德文、法文、西班牙文、意大利文、葡萄牙文、俄文、日文和韩文。没有 Android 版本。"
       }
     }
   ]
@@ -322,7 +322,7 @@
       <div class="card">
         <div class="tile">🚽</div>
         <h3>如厕记录</h3>
-        <p>轻点一下记录小便和大便，按天统计。“这种情况持续多久了？”终于有了答案。</p>
+        <p>轻点一下记录小便和大便，按天统计。正在训练小狗如厕？下次该出门时，大家都会收到提醒。</p>
         <div class="week mini" aria-hidden="true"><span class="d">一</span><span class="d">二</span><span class="d">三</span><span class="d">四</span><span class="d">五</span><span class="d">六</span><span class="d today">日</span> <span class="n pee">3</span><span class="n pee">4</span><span class="n pee">3</span><span class="n pee">5</span><span class="n pee">3</span><span class="n pee">4</span><span class="n pee">2</span> <span class="n poo">1</span><span class="n poo">2</span><span class="n zero">–</span><span class="n poo">1</span><span class="n poo">1</span><span class="n poo">2</span><span class="n poo">1</span></div>
       </div>
       <div class="card">
@@ -342,6 +342,41 @@
       </div>
     </div>
     <p style="margin-top:30px"><a class="more" href="health-record/">PetPill 能记录的一切</a></p>
+  </div>
+</section>
+
+<!-- Diary -->
+<section class="section">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">📔 日记</span>
+      <h2 class="h2">你注意到的，<span class="accent">都为兽医记下。</span></h2>
+      <p class="lead">走路一瘸一拐、早饭没吃、散步很开心：记下来，最多配四张照片。照顾这只宠物的每个人都能看到，也能补充。</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>标记为“给兽医看”的记录，会等着下次就诊</li>
+        <li>就诊前发给诊所，或在兽医报告里查看</li>
+        <li>每天一次，用“好”“一般”“不好”记下它今天怎么样</li>
+      </ul>
+      <a class="more" href="health-record/#diary">日记如何使用</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="mood-card">
+        <div class="mood-q"><b>洛基今天怎么样？</b><span>每日记录 ›</span></div>
+        <div class="mood-faces"><span class="on"><i>🙂</i>好</span><span><i>😐</i>一般</span><span><i>🙁</i>不好</span></div>
+        <p class="mood-answer"><b>状态不错</b> · 20:14 · 你</p>
+      </div>
+      <div style="height:18px"></div>
+      <div class="diary-card">
+        <div class="diary-day">昨天</div>
+        <div class="diary-entry">
+          <div class="diary-top"><span class="diary-when">18:40</span><i class="diary-who">莎拉</i></div>
+          <p class="diary-text">散步后左前腿一瘸一拐，晚饭时已经好了。</p>
+          <div class="diary-photos"><span><img src="../assets/img/puppy-lie.webp" alt=""></span><span class="alt"><img src="../assets/img/puppy-stand.webp" alt=""></span></div>
+          <div class="diary-chips"><span>🌡️ 症状</span><span class="vet">🏥 给兽医看</span></div>
+        </div>
+      </div>
+      <img class="stage-pet float slow" src="../assets/img/puppy-wink.webp" alt="" style="width:116px;right:-20px;top:-104px">
+    </div>
   </div>
 </section>
 
@@ -389,7 +424,7 @@
     <div class="split-copy">
       <span class="eyebrow">📄 兽医报告</span>
       <h2 class="h2">完整的经过，<span class="accent">一页看清。</span></h2>
-      <p class="lead">把宠物档案中任意一段时间生成以过敏信息开头的 PDF：含依从率的给药记录、验血、兽医预约、体重、呼吸频率、食欲和如厕情况。</p>
+      <p class="lead">把宠物档案中任意一段时间生成以过敏信息开头的 PDF：含依从率的给药记录、验血、兽医预约、体重、呼吸频率、食欲、如厕情况、日记和心情。</p>
       <ul class="ticks" style="margin-bottom:26px">
         <li>预览后，通过邮件、信息或隔空投送发送</li>
         <li>诚实的数字：档案中的空缺就显示为空缺</li>
@@ -429,7 +464,7 @@
       <h2 class="h2">不用打开 App <span class="accent">也能记录。</span></h2>
       <p class="lead">接下来要做的事会显示在主屏幕和锁定屏幕上。轻点“给药”就记好了。今天的给药，手腕上也能看到。</p>
       <ul class="ticks" style="margin-bottom:26px">
-        <li>下一剂、全天、下次兽医预约、喂食和如厕记录的小组件</li>
+        <li>下一剂、全天、下次兽医预约、喂食、如厕记录和今日心情的小组件</li>
         <li>喂食提醒以实时活动显示，在锁定屏幕上就能点“已喂”</li>
         <li>Apple Watch App 免费</li>
       </ul>
@@ -482,9 +517,10 @@
           <li>宠物、药物和兽医预约数量不限</li>
           <li>家庭共享</li>
           <li>喂食和护理事项，均带提醒</li>
+          <li>日记和每日心情打卡</li>
           <li>主屏幕与锁定屏幕小组件</li>
           <li>补货提醒</li>
-          <li>体重、如厕记录、呼吸频率和验血</li>
+          <li>体重、如厕记录、如厕训练、呼吸频率和验血</li>
           <li>兽医报告</li>
         </ul>
         <img class="plan-pet" src="../assets/img/puppy-stand.webp" alt="" aria-hidden="true">
@@ -501,7 +537,15 @@
     <div class="faq">
       <details>
         <summary>PetPill 免费吗？</summary>
-        <div class="answer"><p>可以。和伴侣或任何同住的人共享宠物，你们会看到同一份日程，以及每一剂是谁给的。邀请需要 PetPill Pro，加入免费。Pro 订阅也适用于你的家人共享群组。群组之外，它仍覆盖你们共享的宠物：喂食、护理事项、体重、如厕、呼吸和验血。</p><p><a href="household/">家庭共享的运作方式</a></p></div>
+        <div class="answer"><p>是的。免费版可以记录一只宠物、一种药物和一次兽医预约，并包含提醒、给药记录和 Apple Watch App。PetPill Pro 解锁其他一切功能，可按月、按年或一次买断。年度方案为新订阅者提供 7 天免费试用。</p></div>
+      </details>
+      <details>
+        <summary>适合哪些宠物？</summary>
+        <div class="answer"><p>狗、猫、兔子、仓鼠、鸟、鱼、乌龟，以及你输入的任何其他宠物。使用 Pro，养多少只都能添加。</p></div>
+      </details>
+      <details>
+        <summary>我的伴侣能用 PetPill 照顾同一只宠物吗？</summary>
+        <div class="answer"><p>可以。和伴侣或任何同住的人共享宠物，你们会看到同一份日程，以及每一剂是谁给的。邀请需要 PetPill Pro，加入免费。Pro 订阅也适用于你的家人共享群组。群组之外，它仍覆盖你们共享的宠物：喂食、护理事项、日记、心情、体重、如厕、如厕训练、呼吸和验血。</p><p><a href="household/">家庭共享的运作方式</a></p></div>
       </details>
       <details>
         <summary>记录给药一定要打开 App 吗？</summary>
@@ -517,7 +561,7 @@
       </details>
       <details>
         <summary>支持哪些设备和语言？</summary>
-        <div class="answer"><p>iOS 17.6 或更高版本的 iPhone 和 iPad，以及 Apple Watch。PetPill 支持简体中文、英文、德文、法文、西班牙文、意大利文、葡萄牙文、俄文、日文和韩文。没有 Android 版本。</p></div>
+        <div class="answer"><p>iOS 17.6 或更高版本的 iPhone 和 iPad，以及 Apple Watch。在 iPhone Duo 上，无论折叠还是展开，都会占满整个屏幕。PetPill 支持简体中文、英文、德文、法文、西班牙文、意大利文、葡萄牙文、俄文、日文和韩文。没有 Android 版本。</p></div>
       </details>
     </div>
     <p style="text-align:center;margin-top:30px"><a class="more" href="support/">在支持页面查看更多解答</a></p>

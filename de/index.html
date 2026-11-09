@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PetPill: Medikamenten-Erinnerungen für dein Haustier</title>
-<meta name="description" content="PetPill erinnert dich, wenn dein Haustier sein Medikament bekommt, und hält seinen ganzen Alltag in einer App fest: Dosen, Mahlzeiten, Aufgaben, Tierarzttermine, Gewicht, Bluttests und einen Tierarztbericht. Teile es mit allen im Haushalt.">
+<meta name="description" content="PetPill erinnert dich, wenn dein Haustier sein Medikament bekommt, und hält seinen ganzen Alltag in einer App fest: Dosen, Mahlzeiten, Aufgaben, Tierarzttermine, ein Tagebuch, Stubenrein-Training, Gewicht, Bluttests und einen Tierarztbericht. Teile es mit allen im Haushalt.">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../favicon-32.png" sizes="32x32">
@@ -68,7 +68,7 @@
       "name": "Kann mein Partner PetPill für dasselbe Tier nutzen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Teile ein Haustier mit deinem Partner, deiner Partnerin oder allen, mit denen du zusammenlebst: Ihr seht denselben Plan und wer jede Dosis gegeben hat. Einladen braucht PetPill Pro, Beitreten ist kostenlos. Ein Pro-Abo gilt außerdem für deine ganze Familienfreigabe. Außerhalb der Gruppe gilt es trotzdem für die Haustiere, die ihr teilt: ihre Mahlzeiten, Aufgaben, Gewicht, Toilette, Atmung und Bluttests. So funktioniert die Haushaltsfreigabe"
+        "text": "Ja. Teile ein Haustier mit deinem Partner, deiner Partnerin oder allen, mit denen du zusammenlebst: Ihr seht denselben Plan und wer jede Dosis gegeben hat. Einladen braucht PetPill Pro, Beitreten ist kostenlos. Ein Pro-Abo gilt außerdem für deine ganze Familienfreigabe. Außerhalb der Gruppe gilt es trotzdem für die Haustiere, die ihr teilt: ihre Mahlzeiten, Aufgaben, Tagebuch, Stimmung, Gewicht, Toilette, Stubenrein-Training, Atmung und Bluttests."
       }
     },
     {
@@ -100,7 +100,7 @@
       "name": "Welche Geräte und Sprachen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "iPhone und iPad ab iOS 17.6 und Apple Watch. PetPill spricht Deutsch, Englisch, Französisch, Spanisch, Italienisch, Portugiesisch, Russisch, Japanisch, Koreanisch und vereinfachtes Chinesisch. Eine Android-Version gibt es nicht."
+        "text": "iPhone und iPad ab iOS 17.6 und Apple Watch. Auf dem iPhone Duo nutzt PetPill den ganzen Bildschirm, zu- oder aufgeklappt. PetPill spricht Deutsch, Englisch, Französisch, Spanisch, Italienisch, Portugiesisch, Russisch, Japanisch, Koreanisch und vereinfachtes Chinesisch. Eine Android-Version gibt es nicht."
       }
     }
   ]
@@ -322,7 +322,7 @@
       <div class="card">
         <div class="tile">🚽</div>
         <h3>Toiletten-Protokoll</h3>
-        <p>Urin und Kot mit einem Tippen, nach Tagen gezählt. „Seit wann geht das so?“ hat endlich eine Antwort.</p>
+        <p>Urin und Kot mit einem Tippen, nach Tagen gezählt. Ein Welpe soll stubenrein werden? Alle werden erinnert, wenn es wieder Zeit ist, rauszugehen.</p>
         <div class="week mini" aria-hidden="true"><span class="d">M</span><span class="d">D</span><span class="d">M</span><span class="d">D</span><span class="d">F</span><span class="d">S</span><span class="d today">S</span> <span class="n pee">3</span><span class="n pee">4</span><span class="n pee">3</span><span class="n pee">5</span><span class="n pee">3</span><span class="n pee">4</span><span class="n pee">2</span> <span class="n poo">1</span><span class="n poo">2</span><span class="n zero">–</span><span class="n poo">1</span><span class="n poo">1</span><span class="n poo">2</span><span class="n poo">1</span></div>
       </div>
       <div class="card">
@@ -342,6 +342,41 @@
       </div>
     </div>
     <p style="margin-top:30px"><a class="more" href="health-record/">Alles, was PetPill festhält</a></p>
+  </div>
+</section>
+
+<!-- Diary -->
+<section class="section">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">📔 Tagebuch</span>
+      <h2 class="h2">Was dir auffällt, <span class="accent">notiert für den Tierarzt.</span></h2>
+      <p class="lead">Ein Humpeln, ein verschmähtes Frühstück, ein schöner Spaziergang: Schreib es auf, mit bis zu vier Fotos. Alle, die sich um dein Tier kümmern, können es lesen und ergänzen.</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>Markiere einen Eintrag für den Tierarzt, und er wartet auf den nächsten Termin</li>
+        <li>Schick ihn vorher an die Praxis oder finde ihn im Tierarztbericht</li>
+        <li>Einmal am Tag tippst du „Gut“, „Geht so“ oder „Schlecht“ für seinen Tag</li>
+      </ul>
+      <a class="more" href="health-record/#diary">So funktioniert das Tagebuch</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="mood-card">
+        <div class="mood-q"><b>Wie geht's Loki heute?</b><span>Tage ›</span></div>
+        <div class="mood-faces"><span class="on"><i>🙂</i>Gut</span><span><i>😐</i>Geht so</span><span><i>🙁</i>Schlecht</span></div>
+        <p class="mood-answer"><b>Guter Tag</b> · 20:14 · Du</p>
+      </div>
+      <div style="height:18px"></div>
+      <div class="diary-card">
+        <div class="diary-day">Gestern</div>
+        <div class="diary-entry">
+          <div class="diary-top"><span class="diary-when">18:40</span><i class="diary-who">SA</i></div>
+          <p class="diary-text">Humpelt nach dem Spaziergang vorne links. Zum Abendessen wieder fit.</p>
+          <div class="diary-photos"><span><img src="../assets/img/puppy-lie.webp" alt=""></span><span class="alt"><img src="../assets/img/puppy-stand.webp" alt=""></span></div>
+          <div class="diary-chips"><span>🌡️ Symptom</span><span class="vet">🏥 Für den Tierarzt</span></div>
+        </div>
+      </div>
+      <img class="stage-pet float slow" src="../assets/img/puppy-wink.webp" alt="" style="width:116px;right:-20px;top:-104px">
+    </div>
   </div>
 </section>
 
@@ -389,7 +424,7 @@
     <div class="split-copy">
       <span class="eyebrow">📄 Tierarztbericht</span>
       <h2 class="h2">Die ganze Geschichte <span class="accent">auf einer Seite.</span></h2>
-      <p class="lead">Mach aus jedem Zeitraum der Akte deines Haustiers ein PDF, das mit seinen Allergien beginnt: Dosen mit Einnahmetreue, Bluttests, Tierarzttermine, Gewicht, Atemfrequenz, Appetit und Toilettengänge.</p>
+      <p class="lead">Mach aus jedem Zeitraum der Akte deines Haustiers ein PDF, das mit seinen Allergien beginnt: Dosen mit Einnahmetreue, Bluttests, Tierarzttermine, Gewicht, Atemfrequenz, Appetit, Toilettengänge, Tagebuchnotizen und Stimmung.</p>
       <ul class="ticks" style="margin-bottom:26px">
         <li>Vorschau ansehen, dann per Mail, Nachrichten oder AirDrop senden</li>
         <li>Ehrliche Zahlen: Eine Lücke in der Akte bleibt eine Lücke</li>
@@ -429,7 +464,7 @@
       <h2 class="h2">Eintragen, <span class="accent">ohne die App zu öffnen.</span></h2>
       <p class="lead">Was als Nächstes fällig ist, steht auf deinem Home- und Sperrbildschirm. Tippe auf „Geben“, und es ist eingetragen. Die heutigen Dosen hast du auch am Handgelenk.</p>
       <ul class="ticks" style="margin-bottom:26px">
-        <li>Widgets für die nächste Dosis, den ganzen Tag, den nächsten Tierarzttermin, Mahlzeiten und das Toiletten-Protokoll</li>
+        <li>Widgets für die nächste Dosis, den ganzen Tag, den nächsten Tierarzttermin, Mahlzeiten, das Toiletten-Protokoll und die Stimmung des Tages</li>
         <li>Mahlzeit-Erinnerungen als Live-Aktivität, mit „Gefüttert“ auf dem Sperrbildschirm</li>
         <li>Die Apple Watch App ist kostenlos</li>
       </ul>
@@ -482,9 +517,10 @@
           <li>Unbegrenzt Haustiere, Medikamente und Tierarzttermine</li>
           <li>Haushaltsfreigabe</li>
           <li>Mahlzeiten und Aufgaben, mit Erinnerungen</li>
+          <li>Das Tagebuch und die tägliche Stimmungsabfrage</li>
           <li>Widgets für Home- und Sperrbildschirm</li>
           <li>Nachfüll-Erinnerungen</li>
-          <li>Gewicht, Toiletten-Protokoll, Atemfrequenz und Bluttests</li>
+          <li>Gewicht, Toiletten-Protokoll, Stubenrein-Training, Atemfrequenz und Bluttests</li>
           <li>Der Tierarztbericht</li>
         </ul>
         <img class="plan-pet" src="../assets/img/puppy-stand.webp" alt="" aria-hidden="true">
@@ -501,7 +537,15 @@
     <div class="faq">
       <details>
         <summary>Ist PetPill kostenlos?</summary>
-        <div class="answer"><p>Ja. Teile ein Haustier mit deinem Partner, deiner Partnerin oder allen, mit denen du zusammenlebst: Ihr seht denselben Plan und wer jede Dosis gegeben hat. Einladen braucht PetPill Pro, Beitreten ist kostenlos. Ein Pro-Abo gilt außerdem für deine ganze Familienfreigabe. Außerhalb der Gruppe gilt es trotzdem für die Haustiere, die ihr teilt: ihre Mahlzeiten, Aufgaben, Gewicht, Toilette, Atmung und Bluttests.</p><p><a href="household/">So funktioniert die Haushaltsfreigabe</a></p></div>
+        <div class="answer"><p>Ja. Die Gratisversion umfasst ein Haustier, ein Medikament und einen Tierarzttermin, mit Erinnerungen, Verlauf und der Apple Watch App. PetPill Pro schaltet alles andere frei, monatlich, jährlich oder einmal fürs Leben. Das Jahresabo beginnt für neue Abonnenten mit 7 Tagen gratis.</p></div>
+      </details>
+      <details>
+        <summary>Für welche Haustiere ist PetPill gedacht?</summary>
+        <div class="answer"><p>Hunde, Katzen, Kaninchen, Hamster, Vögel, Fische, Schildkröten und jedes andere Tier, das du eintippst. Mit Pro kannst du so viele hinzufügen, wie du hast.</p></div>
+      </details>
+      <details>
+        <summary>Kann mein Partner PetPill für dasselbe Tier nutzen?</summary>
+        <div class="answer"><p>Ja. Teile ein Haustier mit deinem Partner, deiner Partnerin oder allen, mit denen du zusammenlebst: Ihr seht denselben Plan und wer jede Dosis gegeben hat. Einladen braucht PetPill Pro, Beitreten ist kostenlos. Ein Pro-Abo gilt außerdem für deine ganze Familienfreigabe. Außerhalb der Gruppe gilt es trotzdem für die Haustiere, die ihr teilt: ihre Mahlzeiten, Aufgaben, Tagebuch, Stimmung, Gewicht, Toilette, Stubenrein-Training, Atmung und Bluttests.</p><p><a href="household/">So funktioniert die Haushaltsfreigabe</a></p></div>
       </details>
       <details>
         <summary>Muss ich die App öffnen, um eine Dosis einzutragen?</summary>
@@ -517,7 +561,7 @@
       </details>
       <details>
         <summary>Welche Geräte und Sprachen?</summary>
-        <div class="answer"><p>iPhone und iPad ab iOS 17.6 und Apple Watch. PetPill spricht Deutsch, Englisch, Französisch, Spanisch, Italienisch, Portugiesisch, Russisch, Japanisch, Koreanisch und vereinfachtes Chinesisch. Eine Android-Version gibt es nicht.</p></div>
+        <div class="answer"><p>iPhone und iPad ab iOS 17.6 und Apple Watch. Auf dem iPhone Duo nutzt PetPill den ganzen Bildschirm, zu- oder aufgeklappt. PetPill spricht Deutsch, Englisch, Französisch, Spanisch, Italienisch, Portugiesisch, Russisch, Japanisch, Koreanisch und vereinfachtes Chinesisch. Eine Android-Version gibt es nicht.</p></div>
       </details>
     </div>
     <p style="text-align:center;margin-top:30px"><a class="more" href="support/">Mehr Antworten auf der Support-Seite</a></p>

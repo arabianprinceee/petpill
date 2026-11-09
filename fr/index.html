@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PetPill&nbsp;: rappels de médicaments pour votre animal</title>
-<meta name="description" content="PetPill vous rappelle quand votre animal doit prendre son médicament et réunit toute sa routine dans une app&nbsp;: doses, repas, tâches, visites vétérinaires, poids, prises de sang et un rapport vétérinaire. Partagez-la avec tout le foyer.">
+<meta name="description" content="PetPill vous rappelle quand votre animal doit prendre son médicament et réunit toute sa routine dans une app&nbsp;: doses, repas, tâches, visites vétérinaires, un journal, l’apprentissage de la propreté, poids, prises de sang et un rapport vétérinaire. Partagez-la avec tout le foyer.">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../favicon-32.png" sizes="32x32">
@@ -68,7 +68,7 @@
       "name": "Mon ou ma partenaire peut-il utiliser PetPill pour le même animal ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui. Partagez un animal avec votre partenaire ou toute personne avec qui vous vivez : vous voyez le même planning et qui a donné chaque dose. Inviter nécessite PetPill Pro ; rejoindre est gratuit. Un abonnement Pro couvre aussi votre groupe de partage familial. Hors du groupe, il couvre quand même les repas, les tâches, le poids, les toilettes, la respiration et les prises de sang des animaux que vous partagez. Comment fonctionne le partage avec le foyer"
+        "text": "Oui. Partagez un animal avec votre partenaire ou toute personne avec qui vous vivez : vous voyez le même planning et qui a donné chaque dose. Inviter nécessite PetPill Pro ; rejoindre est gratuit. Un abonnement Pro couvre aussi votre groupe de partage familial. Hors du groupe, il couvre quand même les repas, les tâches, le journal, l’humeur, le poids, les toilettes, l’apprentissage de la propreté, la respiration et les prises de sang des animaux que vous partagez."
       }
     },
     {
@@ -100,7 +100,7 @@
       "name": "Quels appareils et quelles langues ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "iPhone et iPad sous iOS 17.6 ou ultérieur, et Apple Watch. PetPill parle français, anglais, allemand, espagnol, italien, portugais, russe, japonais, coréen et chinois simplifié. Il n’existe pas de version Android."
+        "text": "iPhone et iPad sous iOS 17.6 ou ultérieur, et Apple Watch. Sur l’iPhone Duo, l’app occupe tout l’écran, plié ou déplié. PetPill parle français, anglais, allemand, espagnol, italien, portugais, russe, japonais, coréen et chinois simplifié. Il n’existe pas de version Android."
       }
     }
   ]
@@ -322,7 +322,7 @@
       <div class="card">
         <div class="tile">🚽</div>
         <h3>Journal des passages</h3>
-        <p>Urine et selles d’un geste, comptées par jour. «&nbsp;Depuis combien de temps ça dure&nbsp;?&nbsp;» a enfin une réponse.</p>
+        <p>Urine et selles d’un geste, comptées par jour. Un chiot à rendre propre&nbsp;? Tout le monde reçoit un rappel quand c’est l’heure de la prochaine sortie.</p>
         <div class="week mini" aria-hidden="true"><span class="d">L</span><span class="d">M</span><span class="d">M</span><span class="d">J</span><span class="d">V</span><span class="d">S</span><span class="d today">D</span> <span class="n pee">3</span><span class="n pee">4</span><span class="n pee">3</span><span class="n pee">5</span><span class="n pee">3</span><span class="n pee">4</span><span class="n pee">2</span> <span class="n poo">1</span><span class="n poo">2</span><span class="n zero">–</span><span class="n poo">1</span><span class="n poo">1</span><span class="n poo">2</span><span class="n poo">1</span></div>
       </div>
       <div class="card">
@@ -342,6 +342,41 @@
       </div>
     </div>
     <p style="margin-top:30px"><a class="more" href="health-record/">Tout ce que PetPill enregistre</a></p>
+  </div>
+</section>
+
+<!-- Diary -->
+<section class="section">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">📔 Journal</span>
+      <h2 class="h2">Ce que vous remarquez, <span class="accent">noté pour le vétérinaire.</span></h2>
+      <p class="lead">Une boiterie, un petit-déjeuner boudé, une belle promenade&nbsp;: notez-le, avec jusqu’à quatre photos. Tous ceux qui s’occupent de votre animal peuvent le lire et le compléter.</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>Marquez une note pour le vétérinaire, et elle attend sa prochaine visite</li>
+        <li>Envoyez-la à la clinique avant d’y aller, ou retrouvez-la dans le rapport vétérinaire</li>
+        <li>Une fois par jour, touchez Bien, Moyen ou Mal pour sa journée</li>
+      </ul>
+      <a class="more" href="health-record/#diary">Comment fonctionne le journal</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="mood-card">
+        <div class="mood-q"><b>Comment va Loki aujourd’hui&nbsp;?</b><span>Jours ›</span></div>
+        <div class="mood-faces"><span class="on"><i>🙂</i>Bien</span><span><i>😐</i>Moyen</span><span><i>🙁</i>Mal</span></div>
+        <p class="mood-answer"><b>Bonne journée</b> · 20:14 · Vous</p>
+      </div>
+      <div style="height:18px"></div>
+      <div class="diary-card">
+        <div class="diary-day">Hier</div>
+        <div class="diary-entry">
+          <div class="diary-top"><span class="diary-when">18:40</span><i class="diary-who">SA</i></div>
+          <p class="diary-text">Boite de la patte avant gauche après la promenade. Plus rien au dîner.</p>
+          <div class="diary-photos"><span><img src="../assets/img/puppy-lie.webp" alt=""></span><span class="alt"><img src="../assets/img/puppy-stand.webp" alt=""></span></div>
+          <div class="diary-chips"><span>🌡️ Symptôme</span><span class="vet">🏥 Pour le vétérinaire</span></div>
+        </div>
+      </div>
+      <img class="stage-pet float slow" src="../assets/img/puppy-wink.webp" alt="" style="width:116px;right:-20px;top:-104px">
+    </div>
   </div>
 </section>
 
@@ -389,7 +424,7 @@
     <div class="split-copy">
       <span class="eyebrow">📄 Rapport vétérinaire</span>
       <h2 class="h2">Toute l’histoire <span class="accent">sur une page.</span></h2>
-      <p class="lead">Transformez n’importe quelle période du carnet de votre animal en PDF qui s’ouvre sur ses allergies&nbsp;: doses avec taux d’observance, prises de sang, visites vétérinaires, poids, fréquence respiratoire, appétit et passages aux toilettes.</p>
+      <p class="lead">Transformez n’importe quelle période du carnet de votre animal en PDF qui s’ouvre sur ses allergies&nbsp;: doses avec taux d’observance, prises de sang, visites vétérinaires, poids, fréquence respiratoire, appétit, passages aux toilettes, notes du journal et humeur.</p>
       <ul class="ticks" style="margin-bottom:26px">
         <li>Prévisualisez-le, puis envoyez-le par Mail, Messages ou AirDrop</li>
         <li>Des chiffres honnêtes&nbsp;: un trou dans le carnet reste un trou</li>
@@ -429,7 +464,7 @@
       <h2 class="h2">Enregistrez <span class="accent">sans ouvrir l’app.</span></h2>
       <p class="lead">La prochaine échéance s’affiche sur votre écran d’accueil et votre écran verrouillé. Touchez «&nbsp;Donner&nbsp;», c’est enregistré. Les doses du jour sont aussi à votre poignet.</p>
       <ul class="ticks" style="margin-bottom:26px">
-        <li>Des widgets pour la prochaine dose, toute la journée, la prochaine visite vétérinaire, les repas et le journal des passages</li>
+        <li>Des widgets pour la prochaine dose, toute la journée, la prochaine visite vétérinaire, les repas, le journal des passages et l’humeur du jour</li>
         <li>Les rappels de repas en activité en direct, avec «&nbsp;Repas donné&nbsp;» sur l’écran verrouillé</li>
         <li>L’app Apple Watch est gratuite</li>
       </ul>
@@ -482,9 +517,10 @@
           <li>Animaux, médicaments et visites vétérinaires illimités</li>
           <li>Partage avec le foyer</li>
           <li>Repas et tâches, avec rappels</li>
+          <li>Le journal et l’humeur, chaque jour</li>
           <li>Widgets d’écran d’accueil et d’écran verrouillé</li>
           <li>Rappels de recharge</li>
-          <li>Poids, journal des passages, fréquence respiratoire et prises de sang</li>
+          <li>Poids, journal des passages, apprentissage de la propreté, fréquence respiratoire et prises de sang</li>
           <li>Le rapport vétérinaire</li>
         </ul>
         <img class="plan-pet" src="../assets/img/puppy-stand.webp" alt="" aria-hidden="true">
@@ -501,7 +537,15 @@
     <div class="faq">
       <details>
         <summary>PetPill est-il gratuit&nbsp;?</summary>
-        <div class="answer"><p>Oui. Partagez un animal avec votre partenaire ou toute personne avec qui vous vivez&nbsp;: vous voyez le même planning et qui a donné chaque dose. Inviter nécessite PetPill Pro&nbsp;; rejoindre est gratuit. Un abonnement Pro couvre aussi votre groupe de partage familial. Hors du groupe, il couvre quand même les repas, les tâches, le poids, les toilettes, la respiration et les prises de sang des animaux que vous partagez.</p><p><a href="household/">Comment fonctionne le partage avec le foyer</a></p></div>
+        <div class="answer"><p>Oui. La version gratuite couvre un animal, un médicament et une visite vétérinaire, avec les rappels, l’historique des doses et l’app Apple Watch. PetPill Pro débloque tout le reste, au mois, à l’année ou une fois pour toujours. L’abonnement annuel commence par 7&nbsp;jours gratuits pour les nouveaux abonnés.</p></div>
+      </details>
+      <details>
+        <summary>Pour quels animaux&nbsp;?</summary>
+        <div class="answer"><p>Chiens, chats, lapins, hamsters, oiseaux, poissons, tortues, et tout autre animal que vous saisissez. Avec Pro, vous pouvez en ajouter autant que vous en avez.</p></div>
+      </details>
+      <details>
+        <summary>Mon ou ma partenaire peut-il utiliser PetPill pour le même animal&nbsp;?</summary>
+        <div class="answer"><p>Oui. Partagez un animal avec votre partenaire ou toute personne avec qui vous vivez&nbsp;: vous voyez le même planning et qui a donné chaque dose. Inviter nécessite PetPill Pro&nbsp;; rejoindre est gratuit. Un abonnement Pro couvre aussi votre groupe de partage familial. Hors du groupe, il couvre quand même les repas, les tâches, le journal, l’humeur, le poids, les toilettes, l’apprentissage de la propreté, la respiration et les prises de sang des animaux que vous partagez.</p><p><a href="household/">Comment fonctionne le partage avec le foyer</a></p></div>
       </details>
       <details>
         <summary>Faut-il ouvrir l’app pour enregistrer une dose&nbsp;?</summary>
@@ -517,7 +561,7 @@
       </details>
       <details>
         <summary>Quels appareils et quelles langues&nbsp;?</summary>
-        <div class="answer"><p>iPhone et iPad sous iOS 17.6 ou ultérieur, et Apple Watch. PetPill parle français, anglais, allemand, espagnol, italien, portugais, russe, japonais, coréen et chinois simplifié. Il n’existe pas de version Android.</p></div>
+        <div class="answer"><p>iPhone et iPad sous iOS 17.6 ou ultérieur, et Apple Watch. Sur l’iPhone Duo, l’app occupe tout l’écran, plié ou déplié. PetPill parle français, anglais, allemand, espagnol, italien, portugais, russe, japonais, coréen et chinois simplifié. Il n’existe pas de version Android.</p></div>
       </details>
     </div>
     <p style="text-align:center;margin-top:30px"><a class="more" href="support/">Plus de réponses sur la page d’assistance</a></p>
