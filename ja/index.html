@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PetPill：ペットのお薬リマインダー</title>
-<meta name="description" content="PetPillは、ペットのお薬の時間をお知らせし、毎日のお世話をひとつのアプリにまとめます。投与、ごはん、お世話、通院、体重、血液検査、そして獣医レポートまで。家族みんなで共有できます。">
+<meta name="description" content="PetPillは、ペットのお薬の時間をお知らせし、毎日のお世話をひとつのアプリにまとめます。投与、ごはん、お世話、通院、日記、トイレトレーニング、体重、血液検査、そして獣医レポートまで。家族みんなで共有できます。">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../favicon-32.png" sizes="32x32">
@@ -68,7 +68,7 @@
       "name": "パートナーも同じペットにPetPillを使えますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "はい。パートナーや一緒に暮らす人とペットを共有すれば、同じスケジュールと、だれが投与したかを全員で見られます。招待にはPetPill Proが必要ですが、参加は無料です。Proのサブスクリプションはファミリー共有グループにも適用されます。グループ外の人も、共有しているペットのごはん、お世話、体重、トイレ、呼吸、血液検査はあなたのProで使えます。 世帯での共有のしくみ"
+        "text": "はい。パートナーや一緒に暮らす人とペットを共有すれば、同じスケジュールと、だれが投与したかを全員で見られます。招待にはPetPill Proが必要ですが、参加は無料です。Proのサブスクリプションはファミリー共有グループにも適用されます。グループ外の人も、共有しているペットのごはん、お世話、日記、気分、体重、トイレ、トイレトレーニング、呼吸、血液検査はあなたのProで使えます。"
       }
     },
     {
@@ -100,7 +100,7 @@
       "name": "対応デバイスと言語は？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "iOS 17.6以降のiPhoneとiPad、そしてApple Watch。PetPillは日本語、英語、ドイツ語、フランス語、スペイン語、イタリア語、ポルトガル語、ロシア語、韓国語、簡体字中国語に対応しています。Android版はありません。"
+        "text": "iOS 17.6以降のiPhoneとiPad、そしてApple Watch。iPhone Duoでは、折りたたんでも開いても画面全体を使います。PetPillは日本語、英語、ドイツ語、フランス語、スペイン語、イタリア語、ポルトガル語、ロシア語、韓国語、簡体字中国語に対応しています。Android版はありません。"
       }
     }
   ]
@@ -322,7 +322,7 @@
       <div class="card">
         <div class="tile">🚽</div>
         <h3>トイレの記録</h3>
-        <p>おしっことうんちをワンタップで、日ごとに記録。「いつからですか？」に、やっと答えられます。</p>
+        <p>おしっことうんちをワンタップで、日ごとに記録。子犬のトイレトレーニング中なら、次のトイレの時間をみんなにお知らせします。</p>
         <div class="week mini" aria-hidden="true"><span class="d">月</span><span class="d">火</span><span class="d">水</span><span class="d">木</span><span class="d">金</span><span class="d">土</span><span class="d today">日</span> <span class="n pee">3</span><span class="n pee">4</span><span class="n pee">3</span><span class="n pee">5</span><span class="n pee">3</span><span class="n pee">4</span><span class="n pee">2</span> <span class="n poo">1</span><span class="n poo">2</span><span class="n zero">–</span><span class="n poo">1</span><span class="n poo">1</span><span class="n poo">2</span><span class="n poo">1</span></div>
       </div>
       <div class="card">
@@ -342,6 +342,41 @@
       </div>
     </div>
     <p style="margin-top:30px"><a class="more" href="health-record/">PetPillで記録できること</a></p>
+  </div>
+</section>
+
+<!-- Diary -->
+<section class="section">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">📔 日記</span>
+      <h2 class="h2">気づいたことを、<span class="accent">獣医さんのために。</span></h2>
+      <p class="lead">足を引きずる、朝ごはんを残した、楽しい散歩。写真4枚までと一緒に書き留めましょう。ペットのお世話をする人はみんな読めて、書き足せます。</p>
+      <ul class="ticks" style="margin-bottom:26px">
+        <li>「獣医向け」にした記録は、次の通院で待っています</li>
+        <li>通院前に病院へ送ることも、獣医レポートで見ることもできます</li>
+        <li>1日1回、今日の様子を「良い」「ふつう」「悪い」でタップ</li>
+      </ul>
+      <a class="more" href="health-record/#diary">日記のしくみ</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="mood-card">
+        <div class="mood-q"><b>ロキの今日の様子は？</b><span>毎日の気分 ›</span></div>
+        <div class="mood-faces"><span class="on"><i>🙂</i>良い</span><span><i>😐</i>ふつう</span><span><i>🙁</i>悪い</span></div>
+        <p class="mood-answer"><b>良い日</b> · 20:14 · あなた</p>
+      </div>
+      <div style="height:18px"></div>
+      <div class="diary-card">
+        <div class="diary-day">昨日</div>
+        <div class="diary-entry">
+          <div class="diary-top"><span class="diary-when">18:40</span><i class="diary-who">サラ</i></div>
+          <p class="diary-text">散歩のあと左前足を引きずっていた。夕ごはんの頃には元どおり。</p>
+          <div class="diary-photos"><span><img src="../assets/img/puppy-lie.webp" alt=""></span><span class="alt"><img src="../assets/img/puppy-stand.webp" alt=""></span></div>
+          <div class="diary-chips"><span>🌡️ 症状</span><span class="vet">🏥 獣医向け</span></div>
+        </div>
+      </div>
+      <img class="stage-pet float slow" src="../assets/img/puppy-wink.webp" alt="" style="width:116px;right:-20px;top:-104px">
+    </div>
   </div>
 </section>
 
@@ -389,7 +424,7 @@
     <div class="split-copy">
       <span class="eyebrow">📄 獣医レポート</span>
       <h2 class="h2">すべての記録を<span class="accent">1枚に。</span></h2>
-      <p class="lead">ペットの記録の好きな期間を、アレルギーから始まるPDFに。服薬遵守率つきの投与、血液検査、通院、体重、呼吸数、食欲、トイレの記録。</p>
+      <p class="lead">ペットの記録の好きな期間を、アレルギーから始まるPDFに。服薬遵守率つきの投与、血液検査、通院、体重、呼吸数、食欲、トイレの記録、日記、気分。</p>
       <ul class="ticks" style="margin-bottom:26px">
         <li>プレビューして、メール、メッセージ、AirDropで送信</li>
         <li>正直な数字：記録の空白は、空白のまま表示</li>
@@ -429,7 +464,7 @@
       <h2 class="h2">アプリを開かずに<span class="accent">記録。</span></h2>
       <p class="lead">次の予定がホーム画面とロック画面に。「投与」をタップすれば記録完了。今日の投与は手首にも。</p>
       <ul class="ticks" style="margin-bottom:26px">
-        <li>次の投与、1日の予定、次の通院、ごはん、トイレの記録のウィジェット</li>
+        <li>次の投与、1日の予定、次の通院、ごはん、トイレの記録、今日の気分のウィジェット</li>
         <li>ごはんのリマインダーはライブアクティビティで。ロック画面から「あげた」</li>
         <li>Apple Watchアプリは無料です</li>
       </ul>
@@ -482,9 +517,10 @@
           <li>ペット、お薬、通院が無制限</li>
           <li>みんなで共有</li>
           <li>ごはんとお世話、リマインダー付き</li>
+          <li>日記と毎日の気分チェック</li>
           <li>ホーム画面とロック画面のウィジェット</li>
           <li>補充のリマインダー</li>
-          <li>体重、トイレの記録、呼吸数、血液検査</li>
+          <li>体重、トイレの記録、トイレトレーニング、呼吸数、血液検査</li>
           <li>獣医レポート</li>
         </ul>
         <img class="plan-pet" src="../assets/img/puppy-stand.webp" alt="" aria-hidden="true">
@@ -501,7 +537,15 @@
     <div class="faq">
       <details>
         <summary>PetPillは無料ですか？</summary>
-        <div class="answer"><p>はい。パートナーや一緒に暮らす人とペットを共有すれば、同じスケジュールと、だれが投与したかを全員で見られます。招待にはPetPill Proが必要ですが、参加は無料です。Proのサブスクリプションはファミリー共有グループにも適用されます。グループ外の人も、共有しているペットのごはん、お世話、体重、トイレ、呼吸、血液検査はあなたのProで使えます。</p><p><a href="household/">世帯での共有のしくみ</a></p></div>
+        <div class="answer"><p>はい。無料版では、ペット1匹、お薬1つ、通院1件を、リマインダー、投与の履歴、Apple Watchアプリと一緒に使えます。PetPill Proでそれ以外のすべてが使えるようになります。月額、年額、または買い切りで。年額プランは、初めての方なら7日間無料から始まります。</p></div>
+      </details>
+      <details>
+        <summary>どんなペットに使えますか？</summary>
+        <div class="answer"><p>犬、猫、うさぎ、ハムスター、鳥、魚、亀、そして入力すればどんなペットにも。Proなら何匹でも追加できます。</p></div>
+      </details>
+      <details>
+        <summary>パートナーも同じペットにPetPillを使えますか？</summary>
+        <div class="answer"><p>はい。パートナーや一緒に暮らす人とペットを共有すれば、同じスケジュールと、だれが投与したかを全員で見られます。招待にはPetPill Proが必要ですが、参加は無料です。Proのサブスクリプションはファミリー共有グループにも適用されます。グループ外の人も、共有しているペットのごはん、お世話、日記、気分、体重、トイレ、トイレトレーニング、呼吸、血液検査はあなたのProで使えます。</p><p><a href="household/">世帯での共有のしくみ</a></p></div>
       </details>
       <details>
         <summary>投与を記録するのにアプリを開く必要はありますか？</summary>
@@ -517,7 +561,7 @@
       </details>
       <details>
         <summary>対応デバイスと言語は？</summary>
-        <div class="answer"><p>iOS 17.6以降のiPhoneとiPad、そしてApple Watch。PetPillは日本語、英語、ドイツ語、フランス語、スペイン語、イタリア語、ポルトガル語、ロシア語、韓国語、簡体字中国語に対応しています。Android版はありません。</p></div>
+        <div class="answer"><p>iOS 17.6以降のiPhoneとiPad、そしてApple Watch。iPhone Duoでは、折りたたんでも開いても画面全体を使います。PetPillは日本語、英語、ドイツ語、フランス語、スペイン語、イタリア語、ポルトガル語、ロシア語、韓国語、簡体字中国語に対応しています。Android版はありません。</p></div>
       </details>
     </div>
     <p style="text-align:center;margin-top:30px"><a class="more" href="support/">サポートページでほかの質問も</a></p>

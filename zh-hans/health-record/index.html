@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>宠物的健康档案：给药、喂食、体重等 | PetPill</title>
-<meta name="description" content="轻点一下即可记录给药、喂食、称重、如厕、呼吸频率、护理事项和兽医预约，验血结果可直接从化验单添加。PetPill 把宠物的完整健康档案集中在一处。">
+<meta name="description" content="轻点一下即可记录给药、喂食、称重、如厕、呼吸频率、护理事项和兽医预约。还能写带照片的日记、接收如厕训练提醒，并从化验单添加验血结果。">
 <meta name="apple-itunes-app" content="app-id=6760020801">
 <meta name="theme-color" content="#456af7">
 <link rel="icon" href="../../favicon-32.png" sizes="32x32">
@@ -24,7 +24,7 @@
 <meta property="og:url" content="https://petpillapp.com/zh-hans/health-record/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="宠物的完整健康档案 | PetPill">
-<meta property="og:description" content="给药、喂食、体重、如厕、呼吸频率、验血、护理事项和兽医预约，集中在一处。">
+<meta property="og:description" content="给药、喂食、日记、体重、如厕训练、呼吸频率、验血、护理事项和兽医预约，集中在一处。">
 <meta property="og:image" content="https://petpillapp.com/assets/img/og.png">
 <link rel="stylesheet" href="../../assets/css/site.css">
 <script src="../../assets/js/count.js" defer></script>
@@ -86,7 +86,7 @@
     <div class="hero-copy">
       <span class="eyebrow">健康档案</span>
       <h1 class="display"><span class="box">完整的</span><span class="line">健康档案</span></h1>
-      <p class="lead">给药、喂食、称重、如厕、呼吸频率、验血、护理事项和兽医预约。轻点一下记好，集中在一处，兽医问起时随时可看。</p>
+      <p class="lead">给药、喂食、日记、称重、如厕、呼吸频率、验血、护理事项和兽医预约。轻点一下记好，集中在一处，兽医问起时随时可看。</p>
       <div class="cta-row">
         <a class="badge-link" href="https://apps.apple.com/app/id6760020801"><img src="../../assets/badges/app-store-black-zh-hans.svg" alt="在 App Store 下载" width="162" height="54"></a>
         <span class="cta-note">免费下载。Pro 可免费试用 7 天。</span>
@@ -226,6 +226,96 @@
   </div>
 </section>
 
+<!-- Diary -->
+<section class="section" id="diary">
+  <div class="wrap split">
+    <div class="split-copy">
+      <span class="eyebrow">📔 日记 <span class="pro-chip">PRO</span></span>
+      <h2 class="h2">你注意到的，<span class="accent">直接给兽医看。</span></h2>
+      <p class="lead">记下你在宠物身上注意到的事，最多配四张照片：症状、行为、饮食、药物，或只是一个瞬间。</p>
+      <ul class="ticks" style="margin-bottom:22px">
+        <li>照顾这只宠物的每个人都能查看和补充。只有写下记录的人才能修改它。</li>
+        <li>标记为“给兽医看”的记录，会等着下次就诊，或你选的那几次就诊。</li>
+        <li>就诊前，把标记的记录和照片发给诊所。</li>
+        <li>可以搜索，标记的记录会出现在兽医报告里。</li>
+      </ul>
+      <p class="small">在宠物页面点“日记”按钮，或在“今天”中点 + 打开。</p>
+    </div>
+    <div class="stage soft" aria-hidden="true">
+      <div class="diary-card">
+        <div class="visit-head"><span class="visit-mark">🏥</span><div><b>体检</b><span>Riverside Vets · 11月12日 周四 10:00</span></div></div>
+        <div class="diary-day">给兽医看 · 2</div>
+        <div class="diary-entry">
+          <div class="diary-top"><span class="diary-when">11月6日 18:40</span><i class="diary-who">莎拉</i></div>
+          <p class="diary-text">散步后左前腿一瘸一拐。</p>
+          <div class="diary-photos"><span><img src="../../assets/img/puppy-lie.webp" alt=""></span></div>
+          <div class="diary-chips"><span>🌡️ 症状</span></div>
+        </div>
+        <div class="diary-entry">
+          <div class="diary-top"><span class="diary-when">11月9日 03:10</span><i class="diary-who you">AN</i></div>
+          <p class="diary-text">夜里坐立不安，在门口来回走。</p>
+          <div class="diary-chips"><span>🧠 行为</span></div>
+        </div>
+        <div class="diary-send">发送给诊所…</div>
+      </div>
+      <img class="stage-pet float" src="../../assets/img/puppy-tilt.webp" alt="" style="width:112px;right:-22px;top:-112px">
+    </div>
+  </div>
+</section>
+
+<!-- Mood -->
+<section class="section white" id="mood">
+  <div class="wrap split flip">
+    <div class="split-copy">
+      <span class="eyebrow">🙂 每日心情 <span class="pro-chip">PRO</span></span>
+      <h2 class="h2">今天好不好？<span class="accent">轻点一下。</span></h2>
+      <p class="lead">每天一次，用“好”“一般”“不好”记下宠物今天过得怎么样，愿意的话再加一两个词：爱玩、困倦、坐立不安。</p>
+      <ul class="ticks" style="margin-bottom:22px">
+        <li>在日记、“今天”、小组件或晚间提醒中回答，无需解锁。</li>
+        <li>家里每个人各自回答。</li>
+        <li>一眼看清整个月，以及开始用药前后各有多少好日子。</li>
+        <li>兽医报告里有逐周表格。</li>
+      </ul>
+      <p class="small">这是你看到的样子，不是评分：PetPill 不会告诉你状态不好意味着什么。</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="bt-card">
+        <div class="bt-head"><div><b>每周好日子</b><span>洛基</span></div></div>
+        <svg viewBox="0 0 320 150">
+          <line x1="0" y1="132" x2="320" y2="132" stroke="#e3e6ee" stroke-width="1.5"/>
+          <rect x="14" y="119" width="24" height="12" rx="2" fill="#2e9e95"/>
+          <rect x="14" y="80" width="24" height="38" rx="2" fill="#2e9e95" fill-opacity=".38"/>
+          <rect x="14" y="54" width="24" height="25" rx="2" fill="#c7c7cc"/>
+          <rect x="52" y="106" width="24" height="25" rx="2" fill="#2e9e95"/>
+          <rect x="52" y="67" width="24" height="38" rx="2" fill="#2e9e95" fill-opacity=".38"/>
+          <rect x="52" y="41" width="24" height="25" rx="2" fill="#c7c7cc"/>
+          <rect x="90" y="119" width="24" height="12" rx="2" fill="#2e9e95"/>
+          <rect x="90" y="80" width="24" height="38" rx="2" fill="#2e9e95" fill-opacity=".38"/>
+          <rect x="90" y="54" width="24" height="25" rx="2" fill="#c7c7cc"/>
+          <rect x="128" y="106" width="24" height="25" rx="2" fill="#2e9e95"/>
+          <rect x="128" y="80" width="24" height="25" rx="2" fill="#2e9e95" fill-opacity=".38"/>
+          <rect x="128" y="54" width="24" height="25" rx="2" fill="#c7c7cc"/>
+          <rect x="166" y="93" width="24" height="38" rx="2" fill="#2e9e95"/>
+          <rect x="166" y="67" width="24" height="25" rx="2" fill="#2e9e95" fill-opacity=".38"/>
+          <rect x="166" y="54" width="24" height="12" rx="2" fill="#c7c7cc"/>
+          <rect x="204" y="80" width="24" height="51" rx="2" fill="#2e9e95"/>
+          <rect x="204" y="54" width="24" height="25" rx="2" fill="#2e9e95" fill-opacity=".38"/>
+          <rect x="204" y="41" width="24" height="12" rx="2" fill="#c7c7cc"/>
+          <rect x="242" y="80" width="24" height="51" rx="2" fill="#2e9e95"/>
+          <rect x="242" y="54" width="24" height="25" rx="2" fill="#2e9e95" fill-opacity=".38"/>
+          <rect x="280" y="93" width="24" height="38" rx="2" fill="#2e9e95"/>
+          <rect x="280" y="80" width="24" height="12" rx="2" fill="#2e9e95" fill-opacity=".38"/>
+          <line x1="157" y1="20" x2="157" y2="132" stroke="#456af7" stroke-dasharray="3 3" stroke-width="1.6"/>
+          <text class="rule" x="161" y="14">加巴喷丁</text>
+        </svg>
+        <p class="mood-legend"><span><i></i>好</span><span><i class="o"></i>一般</span><span><i class="b"></i>不好</span></p>
+        <p class="bt-legend">10月12日以来好日子：14／23（有回答的日子）。之前4周：6／25。</p>
+      </div>
+      <img class="stage-pet float slow" src="../../assets/img/kitten-sit.webp" alt="" style="width:104px;left:-22px;top:-118px">
+    </div>
+  </div>
+</section>
+
 <!-- Weight + toilet -->
 <section class="section">
   <div class="wrap">
@@ -264,6 +354,40 @@
           <svg class="spark" viewBox="0 0 300 70"><rect x="0" y="34" width="300" height="18" fill="#5856d6" opacity=".12"/><line x1="0" y1="14" x2="300" y2="14" stroke="#ef8a00" stroke-dasharray="6 6" stroke-width="2"/><path d="M4 44 L 40 40 L 80 46 L 120 42 L 160 38 L 200 44 L 240 40 L 296 36" fill="none" stroke="#5856d6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="296" cy="36" r="5" fill="#5856d6"/></svg>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Potty training -->
+<section class="section" id="potty-training">
+  <div class="wrap split flip">
+    <div class="split-copy">
+      <span class="eyebrow">🚽 如厕训练 <span class="pro-chip">PRO</span></span>
+      <h2 class="h2">该出门了？<span class="accent">大家都知道。</span></h2>
+      <p class="lead">正在训练小狗如厕，或教小猫、兔子用砂盆？在如厕记录中开启训练，选择间隔，从每 30 分钟到每 6 小时。</p>
+      <ul class="ticks" style="margin-bottom:22px">
+        <li>到了下次如厕时间，照顾这只宠物的每个人都会收到提醒。</li>
+        <li>每次小便或大便都会重新计时，夜里的提醒会等到早上。</li>
+        <li>直接在提醒里记录小便或大便，无需解锁。</li>
+        <li>失误会被计数，连续两周没有失误，PetPill 会建议结束训练。</li>
+      </ul>
+      <p class="small">狗狗在户外或尿垫上；猫和兔子用砂盆。</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="lock">
+        <div class="clock"><div class="date">11月7日 星期六</div><div class="time">14:30</div></div>
+        <div class="notif">
+          <img src="../../assets/img/icon-128.webp" alt="">
+          <div><b>该带洛基出门了</b><span>上次大小便：12:30。</span></div>
+          <time>现在</time>
+        </div>
+        <div class="actions-menu">
+          <div>户外小便</div>
+          <div>户外大便</div>
+          <div>15 分钟后提醒</div>
+        </div>
+      </div>
+      <img class="stage-pet float" src="../../assets/img/puppy-run.webp" alt="" style="width:140px;left:-30px;top:-96px">
     </div>
   </div>
 </section>

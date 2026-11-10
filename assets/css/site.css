@@ -750,3 +750,53 @@ a.card:hover { text-decoration: none; }
 .bt-answers .ok { background: var(--blue); color: #fff; }
 .pdf .allergy { margin-top: 12px; border: 1.5px solid #111; border-radius: 4px; padding: 6px 9px; font-size: 12px; }
 .pdf .allergy b { margin-right: 6px; }
+
+/* 2.4: the diary, the daily mood and potty training, drawn as the app draws them */
+.mood-card, .diary-card {
+  position: relative; z-index: 2; background: var(--card); border-radius: 26px; padding: 18px 20px;
+  box-shadow: var(--shadow-card); font-family: var(--sans); color: var(--ink);
+}
+.mood-q { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.mood-q b { font-family: var(--rounded); font-weight: 800; font-size: 19px; line-height: 1.25; }
+.mood-q span { font-size: 14px; font-weight: 700; color: var(--blue-text); white-space: nowrap; }
+.mood-faces { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+.mood-faces span {
+  display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 11px 4px 10px; border-radius: 16px;
+  background: var(--tile); font-size: 13.5px; font-weight: 700; color: var(--muted); text-align: center;
+}
+.mood-faces i { font-style: normal; font-size: 30px; line-height: 1; }
+.mood-faces .on { background: #fff; color: var(--ink); box-shadow: 0 0 0 2.5px var(--blue); }
+.mood-answer { margin-top: 12px; font-size: 14px; color: var(--muted); }
+.mood-answer b { color: var(--ink); }
+.mood-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 10px; font-size: 13px; color: var(--muted); }
+.mood-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.mood-legend i { width: 10px; height: 10px; border-radius: 2px; background: #2e9e95; }
+.mood-legend i.o { background: rgba(46, 158, 149, 0.38); }
+.mood-legend i.b { background: #c7c7cc; }
+.bt-card svg text.rule { fill: var(--blue-text); font-weight: 700; }
+.diary-day { font: 800 12px/1.3 var(--rounded); letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
+.diary-entry { margin-top: 10px; }
+.diary-entry + .diary-entry { margin-top: 14px; padding-top: 14px; border-top: 1px solid #edf0f5; }
+.diary-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.diary-when { font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); font-variant-numeric: tabular-nums; }
+.diary-who {
+  flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
+  font-style: normal; font-size: 10.5px; font-weight: 800; color: #fff; background: #e05a8a;
+}
+.diary-who.you { background: #4d7cf0; }
+.diary-text { margin-top: 4px; font-size: 15.5px; line-height: 1.4; }
+.diary-photos { display: flex; gap: 8px; margin-top: 10px; }
+.diary-photos span {
+  width: 64px; height: 64px; border-radius: 12px; overflow: hidden; display: flex; align-items: flex-end; justify-content: center;
+  background: linear-gradient(160deg, #ffe9cf, #ffd2ad);
+}
+.diary-photos span.alt { background: linear-gradient(160deg, #dcf3e6, #bfe6d1); }
+.diary-photos img { width: 88%; height: auto; }
+.diary-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.diary-chips span { font-size: 12.5px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--tile); color: var(--text); }
+.diary-chips .vet { background: rgba(69, 106, 247, 0.12); color: var(--blue-text); }
+.visit-head { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 12px; align-items: center; margin-bottom: 16px; }
+.visit-mark { width: 44px; height: 44px; border-radius: 12px; background: var(--tile); display: grid; place-items: center; font-size: 22px; }
+.visit-head b { display: block; font-family: var(--rounded); font-weight: 800; font-size: 19px; line-height: 1.2; }
+.visit-head span { font-size: 13.5px; color: var(--muted); }
+.diary-send { margin-top: 16px; text-align: center; padding: 11px 12px; border-radius: 14px; background: var(--blue); color: #fff; font-weight: 700; font-size: 15px; }
